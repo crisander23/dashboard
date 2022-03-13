@@ -148,7 +148,7 @@
                         <span class="text-secondary text-xs font-weight-bold">No Data</span>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="app"></div>
+                        <div id="test"></div>
                       </td>
                       <script>
                       fetch('https://api-apollo.pegaxy.io/v1/pegas/36739')
@@ -156,7 +156,7 @@
     return response.json();
 }).then(data =>{
     console.log(data);
-    document.querySelector('#app').innerHTML=data.energy;'  ';
+    document.querySelector('#test').innerHTML=data.energy;'  ';
 }).catch(error=>{
     console.log(error);
 });
