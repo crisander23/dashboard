@@ -152,10 +152,19 @@
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <a href="https://www.pegaxy.tech/inspector/42078" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-                          Energy
-                        </a>
+                        <div id="app"></div>
                       </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/42078')
+.then(response =>{
+    return response.json();
+}).then(data =>{
+    console.log(data);
+    document.querySelector('#app').innerHTML=data.energy;'  ';
+}).catch(error=>{
+    console.log(error);
+});
+</script>
                     </tr>
                     <tr>
                       <td>
@@ -180,10 +189,19 @@
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <a href="https://www.pegaxy.tech/inspector/63983" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-                          Energy
-                        </a>
+                        <div id="drake"></div>
                       </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/63983')
+.then(response =>{
+    return response.json();
+}).then(data =>{
+    console.log(data);
+    document.querySelector('#drake').innerHTML=data.energy;'  ';
+}).catch(error=>{
+    console.log(error);
+});
+</script>
                     </tr>
                     <tr>
                       <td>
@@ -208,10 +226,19 @@
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <a href="https://www.pegaxy.tech/inspector/48198" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-                          Energy
-                        </a>
+                        <div id="klein"></div>
                       </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/48198')
+.then(response =>{
+    return response.json();
+}).then(data =>{
+    console.log(data);
+    document.querySelector('#klein').innerHTML=data.energy;'  ';
+}).catch(error=>{
+    console.log(error);
+});
+</script>
                     </tr>
 <!------------------------------------------------------------>
                     <tr>
@@ -237,10 +264,19 @@
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <a href="https://www.pegaxy.tech/inspector/65087" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-                          Energy
-                        </a>
+                        <div id="miee"></div>
                       </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/65087')
+.then(response =>{
+    return response.json();
+}).then(data =>{
+    console.log(data);
+    document.querySelector('#miee').innerHTML=data.energy;'  ';
+}).catch(error=>{
+    console.log(error);
+});
+</script>
                     </tr>
                     <!------------------------------------------------------------>
                     <tr>
@@ -266,10 +302,19 @@
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <a href="https://www.pegaxy.tech/inspector/112838" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-                          Energy
-                        </a>
+                        <div id="kath"></div>
                       </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/112838')
+.then(response =>{
+    return response.json();
+}).then(data =>{
+    console.log(data);
+    document.querySelector('#kath').innerHTML=data.energy;'  ';
+}).catch(error=>{
+    console.log(error);
+});
+</script>
                     </tr>
  <!------------------------------------------------------------>
  <tr>
@@ -295,10 +340,19 @@
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <a href="https://www.pegaxy.tech/inspector/109909" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-      Energy
-    </a>
+    <div id="meep"></div>
   </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/109909')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#meep').innerHTML=data.energy;'  ';
+}).catch(error=>{
+console.log(error);
+});
+</script>
 </tr>
  <!------------------------------------------------------------>
  <tr>
@@ -318,16 +372,25 @@
 
   </td>
   <td class="align-middle text-center text-sm">
-    <p class="text-xs font-weight-bold mb-0">1088836</p>
+    <p class="text-xs font-weight-bold mb-0">108836</p>
   </td>
   <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <a href="https://www.pegaxy.tech/inspector/1088836" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-      Energy
-    </a>
+    <div id="echo"></div>
   </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/108836')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#echo').innerHTML=data.energy;'  ';
+}).catch(error=>{
+console.log(error);
+});
+</script>
 </tr>
 <!------------------------------------------------------------>
 <tr>
@@ -353,10 +416,19 @@
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <a href="https://www.pegaxy.tech/inspector/119927" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-      Energy
-    </a>
+    <div id="jane"></div>
   </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/119927')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#jane').innerHTML=data.energy;'  ';
+}).catch(error=>{
+console.log(error);
+});
+</script>
 </tr>
 <!------------------------------------------------------------>
 <tr>
@@ -381,11 +453,21 @@
   <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
+ 
   <td class="align-middle text-center">
-    <a href="https://www.pegaxy.tech/inspector/138256" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-      Energy
-    </a>
+    <div id="froi"></div>
   </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/138256')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#froi').innerHTML=data.energy;'  ';
+}).catch(error=>{
+console.log(error);
+});
+</script>
 </tr>
 <!------------------------------------------------------------>
 <tr>
@@ -411,10 +493,19 @@
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <a href="https://www.pegaxy.tech/inspector/279823" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-      Energy
-    </a>
+    <div id="note"></div>
   </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/279823')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#note').innerHTML=data.energy;'  ';
+}).catch(error=>{
+console.log(error);
+});
+</script>
 </tr>
 <!------------------------------------------------------------>
 <tr>
@@ -440,10 +531,19 @@
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <a href="https://www.pegaxy.tech/inspector/281404" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-      Energy
-    </a>
+    <div id="abyss"></div>
   </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/281404')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#abyss').innerHTML=data.energy;'  ';
+}).catch(error=>{
+console.log(error);
+});
+</script>
 </tr>
        <!------------------------------------------------------------>
 <tr>
@@ -467,12 +567,20 @@
   </td>
   <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
-  </td>
-  <td class="align-middle text-center">
-    <a href="https://www.pegaxy.tech/inspector/281893" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-      Energy
-    </a>
-  </td>
+    <td class="align-middle text-center">
+      <div id="sherwin"></div>
+    </td>
+    <script>
+    fetch('https://api-apollo.pegaxy.io/v1/pegas/281893')
+  .then(response =>{
+  return response.json();
+  }).then(data =>{
+  console.log(data);
+  document.querySelector('#sherwin').innerHTML=data.energy;'  ';
+  }).catch(error=>{
+  console.log(error);
+  });
+  </script>
 </tr>   
        <!------------------------------------------------------------>
        <tr>
@@ -498,10 +606,19 @@
           <span class="text-secondary text-xs font-weight-bold">1</span>
         </td>
         <td class="align-middle text-center">
-          <a href="https://www.pegaxy.tech/inspector/282021" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-            Energy
-          </a>
+          <div id="xgab"></div>
         </td>
+        <script>
+        fetch('https://api-apollo.pegaxy.io/v1/pegas/282021')
+      .then(response =>{
+      return response.json();
+      }).then(data =>{
+      console.log(data);
+      document.querySelector('#xgab').innerHTML=data.energy;'  ';
+      }).catch(error=>{
+      console.log(error);
+      });
+      </script>
       </tr> 
         <!------------------------------------------------------------>
         <tr>
@@ -527,10 +644,19 @@
             <span class="text-secondary text-xs font-weight-bold">1</span>
           </td>
           <td class="align-middle text-center">
-            <a href="https://www.pegaxy.tech/inspector/280154" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-              Energy
-            </a>
+            <div id="anisah"></div>
           </td>
+          <script>
+          fetch('https://api-apollo.pegaxy.io/v1/pegas/280154')
+        .then(response =>{
+        return response.json();
+        }).then(data =>{
+        console.log(data);
+        document.querySelector('#anisah').innerHTML=data.energy;'  ';
+        }).catch(error=>{
+        console.log(error);
+        });
+        </script>
         </tr>      
               <!------------------------------------------------------------>
               <tr>
@@ -556,10 +682,19 @@
                   <span class="text-secondary text-xs font-weight-bold">1</span>
                 </td>
                 <td class="align-middle text-center">
-                  <a href="https://www.pegaxy.tech/inspector/268121" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
-                    Energy
-                  </a>
+                  <div id="nuggets"></div>
                 </td>
+                <script>
+                fetch('https://api-apollo.pegaxy.io/v1/pegas/268121')
+              .then(response =>{
+              return response.json();
+              }).then(data =>{
+              console.log(data);
+              document.querySelector('#nuggets').innerHTML=data.energy;'  ';
+              }).catch(error=>{
+              console.log(error);
+              });
+              </script>
               </tr>     
                     <!-------------------------->
                   </tbody>
