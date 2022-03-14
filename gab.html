@@ -121,37 +121,464 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Scholar</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Discord ID</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Horse Number</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Metamask Address</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Number of Pegas</th>
+
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Energy Checker</th>
                     </tr>
                   </thead>
                   <!---->
                   <tbody>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">No Data</h6>
-                           
-                          </div>
+                   <!----------------------------->
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex px-2 py-1">
+                        <div>
+                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                         </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">No Data</p>
-         
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">No Data</p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">No Data</span>
-                      </td>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h6 class="mb-0 text-sm">RBV l Michelle </h6>
+                         
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">RBV / Michelle#6023
+
+                      </p>
+       
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                      <p class="text-xs font-weight-bold mb-0">115139 </p>
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                      <p class="text-xs font-weight-bold mb-0">0x6C220F147FEb73c052135EF5F3339214E76cb7ff </p>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">1
+                      </span>
+                    </td>
+               
+                    <td class="align-middle text-center">
+                      <div id="michelle"></div>
+                    </td>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/115139')
+.then(response =>{
+  return response.json();
+}).then(data =>{
+  console.log(data);
+  document.querySelector('#michelle').innerHTML=data.energy;'  ';
+ 
+ 
+}).catch(error=>{
+  console.log(error);
+});
+</script>
+                  </tr>
+                              <!----------------------------->
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex px-2 py-1">
+                        <div>
+                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h6 class="mb-0 text-sm">RBV l JL </h6>
+                         
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">JL#4115
+
+                      </p>
+       
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                      <p class="text-xs font-weight-bold mb-0">322567  </p>
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                      <p class="text-xs font-weight-bold mb-0">0x1807B64f2288522f697C3DE5Abe72C58CDDf5D6e </p>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">1
+                      </span>
+                    </td>
+               
+                    <td class="align-middle text-center">
+                      <div id="jl"></div>
+                    </td>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/322567')
+.then(response =>{
+  return response.json();
+}).then(data =>{
+  console.log(data);
+  document.querySelector('#jl').innerHTML=data.energy;'  ';
+ 
+ 
+}).catch(error=>{
+  console.log(error);
+});
+</script>
+</tr>
+                              <!----------------------------->
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="d-flex px-2 py-1">
+                                  <div>
+                                    <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                                  </div>
+                                  <div class="d-flex flex-column justify-content-center">
+                                    <h6 class="mb-0 text-sm">RBV l Nokki </h6>
+                                   
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-xs font-weight-bold mb-0">Nokki#5661
+          
+                                </p>
+                 
+                              </td>
+                              <td class="align-middle text-center text-sm">
+                                <p class="text-xs font-weight-bold mb-0">270221   </p>
+                              </td>
+                              <td class="align-middle text-center text-sm">
+                                <p class="text-xs font-weight-bold mb-0">0x713e9FA6341Acbef38B1FfBf28F41b2A15804D1f </p>
+                              </td>
+                              <td class="align-middle text-center">
+                                <span class="text-secondary text-xs font-weight-bold">1
+                                </span>
+                              </td>
+                         
+                              <td class="align-middle text-center">
+                                <div id="nokki"></div>
+                              </td>
+                              <script>
+                              fetch('https://api-apollo.pegaxy.io/v1/pegas/270221')
+          .then(response =>{
+            return response.json();
+          }).then(data =>{
+            console.log(data);
+            document.querySelector('#nokki').innerHTML=data.energy;'  ';
+           
+           
+          }).catch(error=>{
+            console.log(error);
+          });
+          </script>
+          </tr>
+                                   <!----------------------------->
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <div class="d-flex px-2 py-1">
+                                        <div>
+                                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                          <h6 class="mb-0 text-sm">RBV l Hate </h6>
+                                         
+                                        </div>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <p class="text-xs font-weight-bold mb-0">Hate#1793 
+                                      </p>
+                       
+                                    </td>
+                                    <td class="align-middle text-center text-sm">
+                                      <p class="text-xs font-weight-bold mb-0">62688   </p>
+                                    </td>
+                                    <td class="align-middle text-center text-sm">
+                                      <p class="text-xs font-weight-bold mb-0">0xDE1779702a603787C8bEF791a088f85f4A3ec6D8 </p>
+                                    </td>
+                                    <td class="align-middle text-center">
+                                      <span class="text-secondary text-xs font-weight-bold">1
+                                      </span>
+                                    </td>
+                               
+                                    <td class="align-middle text-center">
+                                      <div id="hate"></div>
+                                    </td>
+                                    <script>
+                                    fetch('https://api-apollo.pegaxy.io/v1/pegas/62688')
+                .then(response =>{
+                  return response.json();
+                }).then(data =>{
+                  console.log(data);
+                  document.querySelector('#hate').innerHTML=data.energy;'  ';
+                 
+                 
+                }).catch(error=>{
+                  console.log(error);
+                });
+                </script>
+                </tr>
+
+                <!----------------------------->
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex px-2 py-1">
+                    <div>
+                      <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                    </div>
+                    <div class="d-flex flex-column justify-content-center">
+                      <h6 class="mb-0 text-sm">RBV l Ozone </h6>
                      
-                    </tr>
-                    
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="text-xs font-weight-bold mb-0">RBV | OZONE #0813 
+                  </p>
+   
+                </td>
+                <td class="align-middle text-center text-sm">
+                  <p class="text-xs font-weight-bold mb-0">77268   </p>
+                </td>
+                <td class="align-middle text-center text-sm">
+                  <p class="text-xs font-weight-bold mb-0">0x32F4Fe584aBCdB8775c62097EA826E56c0E74CB5 </p>
+                </td>
+                <td class="align-middle text-center">
+                  <span class="text-secondary text-xs font-weight-bold">1
+                  </span>
+                </td>
+           
+                <td class="align-middle text-center">
+                  <div id="ozone"></div>
+                </td>
+                <script>
+                fetch('https://api-apollo.pegaxy.io/v1/pegas/77268')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#ozone').innerHTML=data.energy;'  ';
+
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+</tr>
+
+<!----------------------------->
+</tr>
+<tr>
+  <td>
+    <div class="d-flex px-2 py-1">
+      <div>
+        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <h6 class="mb-0 text-sm">RBV l Khen </h6>
+       
+      </div>
+    </div>
+  </td>
+  <td>
+    <p class="text-xs font-weight-bold mb-0">RBV | KHEN #6877 
+    </p>
+
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">137497   </p>
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">0x0e6FC153B8E13FbA6Cb4b0353f9FEd57e529A963 </p>
+  </td>
+  <td class="align-middle text-center">
+    <span class="text-secondary text-xs font-weight-bold">1
+    </span>
+  </td>
+
+  <td class="align-middle text-center">
+    <div id="khen"></div>
+  </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/137497')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#khen').innerHTML=data.energy;'  ';
+
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+</tr>
+
+
+<!----------------------------->
+</tr>
+<tr>
+  <td>
+    <div class="d-flex px-2 py-1">
+      <div>
+        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <h6 class="mb-0 text-sm">RBV l SHEENA</h6>
+       
+      </div>
+    </div>
+  </td>
+  <td>
+    <p class="text-xs font-weight-bold mb-0">sheena#5349
+ 
+    </p>
+
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">145919   </p>
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">0x9e5F75d3C535d4fcd9449b86539A19AA7bde2837 </p>
+  </td>
+  <td class="align-middle text-center">
+    <span class="text-secondary text-xs font-weight-bold">1
+    </span>
+  </td>
+
+  <td class="align-middle text-center">
+    <div id="sheena"></div>
+  </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/145919')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#sheena').innerHTML=data.energy;'  ';
+
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+</tr>
+
+<!----------------------------->
+</tr>
+<tr>
+  <td>
+    <div class="d-flex px-2 py-1">
+      <div>
+        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <h6 class="mb-0 text-sm">RBV | Nica mylove of Dave</h6>
+       
+      </div>
+    </div>
+  </td>
+  <td>
+    <p class="text-xs font-weight-bold mb-0">EKAY #9940
+ 
+    </p>
+
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">181606 | 268551   </p>
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">0x9e5F75d3C535d4fcd9449b86539A19AA7bde2837 </p>
+  </td>
+  <td class="align-middle text-center">
+    <span class="text-secondary text-xs font-weight-bold">2
+    </span>
+  </td>
+
+  <td class="align-middle text-center">
+    <div  id="nica"></div>
+    <div  id="nica2"></div>
+
+   
+  </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/181606')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#nica').innerHTML=data.energy;'  ';
+
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+<script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/268551')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#nica2').innerHTML=data.energy;'  ';
+
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+</tr>
+<!----------------------------->
+</tr>
+<tr>
+  <td>
+    <div class="d-flex px-2 py-1">
+      <div>
+        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <h6 class="mb-0 text-sm">RBV l Jano</h6>
+       
+      </div>
+    </div>
+  </td>
+  <td>
+    <p class="text-xs font-weight-bold mb-0">Jano#2089
+ 
+    </p>
+
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">99709   </p>
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">0x41D7667967CE06BF7f6DE19Cf10f02ea7B139d6A </p>
+  </td>
+  <td class="align-middle text-center">
+    <span class="text-secondary text-xs font-weight-bold">1
+    </span>
+  </td>
+
+  <td class="align-middle text-center">
+    <div id="jano"></div>
+  </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/99709')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#jano').innerHTML=data.energy;'  ';
+
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+</tr>
                     <!-------------------------->
                   </tbody>
                 </table>

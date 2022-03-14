@@ -123,7 +123,9 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Scholar</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Discord ID</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Horse Number</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Metamask Address</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Number of Pegas</th>
+
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Energy Checker</th>
                     </tr>
                   </thead>
@@ -149,10 +151,13 @@
                         <p class="text-xs font-weight-bold mb-0">42078</p>
                       </td>
                       <td class="align-middle text-center">
+                        <p class="text-xs font-weight-bold mb-0">0x890bdDAd101CAeB88b48dE6F737392956657162b </p>
+                      </td>
+                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="app"></div>
+                        <div id="cy"></div>
                       </td>
                       <script>
                       fetch('https://api-apollo.pegaxy.io/v1/pegas/42078')
@@ -160,7 +165,8 @@
     return response.json();
 }).then(data =>{
     console.log(data);
-    document.querySelector('#app').innerHTML=data.energy;'  ';
+    document.querySelector('#cy').innerHTML=data.energy;'  ';
+
 }).catch(error=>{
     console.log(error);
 });
@@ -186,6 +192,9 @@
                         <p class="text-xs font-weight-bold mb-0">63983</p>
                       </td>
                       <td class="align-middle text-center">
+                        <p class="text-xs font-weight-bold mb-0">0x47e4D434bBa57E82ada0f938D7470bdAdD4E5f32 </p>
+                      </td>
+                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
@@ -198,6 +207,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#drake').innerHTML=data.energy;'  ';
+
 }).catch(error=>{
     console.log(error);
 });
@@ -223,6 +233,9 @@
                         <p class="text-xs font-weight-bold mb-0">48198</p>
                       </td>
                       <td class="align-middle text-center">
+                        <p class="text-xs font-weight-bold mb-0">0xa1b7378adF598071ceD7f36acfdeFcbBEB930Ad7 </p>
+                      </td>
+                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
@@ -235,6 +248,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#klein').innerHTML=data.energy;'  ';
+   
 }).catch(error=>{
     console.log(error);
 });
@@ -261,6 +275,9 @@
                         <p class="text-xs font-weight-bold mb-0">65087</p>
                       </td>
                       <td class="align-middle text-center">
+                        <p class="text-xs font-weight-bold mb-0">0x6d09d33817bAE239144E5006b0ADF0fc9f0b8AC4 </p>
+                      </td>
+                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
@@ -273,6 +290,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#miee').innerHTML=data.energy;'  ';
+
 }).catch(error=>{
     console.log(error);
 });
@@ -299,6 +317,9 @@
                         <p class="text-xs font-weight-bold mb-0">112838</p>
                       </td>
                       <td class="align-middle text-center">
+                        <p class="text-xs font-weight-bold mb-0">0xb3777095A3CfD13F887AA44Db7f5c7462B7c4Ed6 </p>
+                      </td>
+                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
@@ -311,6 +332,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#kath').innerHTML=data.energy;'  ';
+  
 }).catch(error=>{
     console.log(error);
 });
@@ -337,6 +359,9 @@
     <p class="text-xs font-weight-bold mb-0">109909</p>
   </td>
   <td class="align-middle text-center">
+    <p class="text-xs font-weight-bold mb-0">0x33aFc4A2C28b02F24e0B49688f0285df6c9dbc90 </p>
+  </td>
+  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
@@ -349,6 +374,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#meep').innerHTML=data.energy;'  ';
+
 }).catch(error=>{
 console.log(error);
 });
@@ -375,6 +401,9 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">108836</p>
   </td>
   <td class="align-middle text-center">
+    <p class="text-xs font-weight-bold mb-0">0xb8C8e20A30496d05341992904D44D861640b8378 </p>
+  </td>
+  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
@@ -387,6 +416,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#echo').innerHTML=data.energy;'  ';
+
 }).catch(error=>{
 console.log(error);
 });
@@ -413,6 +443,9 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">119927</p>
   </td>
   <td class="align-middle text-center">
+    <p class="text-xs font-weight-bold mb-0">0x9EC5367c2Aac62B7d3F347c947Fb9cae2B8A242A </p>
+  </td>
+  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
@@ -425,6 +458,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#jane').innerHTML=data.energy;'  ';
+
 }).catch(error=>{
 console.log(error);
 });
@@ -451,6 +485,9 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">138256</p>
   </td>
   <td class="align-middle text-center">
+    <p class="text-xs font-weight-bold mb-0">0x311e93eA47DD6c6583578eDf62EFB657E3623551 </p>
+  </td>
+  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
  
@@ -464,6 +501,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#froi').innerHTML=data.energy;'  ';
+
 }).catch(error=>{
 console.log(error);
 });
@@ -490,6 +528,9 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">279823</p>
   </td>
   <td class="align-middle text-center">
+    <p class="text-xs font-weight-bold mb-0">0x015EF07A5a97F211456dab8ada76ED791e7A21DD </p>
+  </td>
+  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
@@ -502,6 +543,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#note').innerHTML=data.energy;'  ';
+
 }).catch(error=>{
 console.log(error);
 });
@@ -528,6 +570,9 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">281404</p>
   </td>
   <td class="align-middle text-center">
+    <p class="text-xs font-weight-bold mb-0">0x276fA04ec499f7eED075FF56c23733E2c582c646 </p>
+  </td>
+  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
@@ -540,6 +585,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#abyss').innerHTML=data.energy;'  ';
+
 }).catch(error=>{
 console.log(error);
 });
@@ -566,6 +612,9 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">281893</p>
   </td>
   <td class="align-middle text-center">
+    <p class="text-xs font-weight-bold mb-0">0x0380D1130863963575A5B9703E9276Cb2FFa95BF </p>
+  </td>
+  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
     <td class="align-middle text-center">
       <div id="sherwin"></div>
@@ -577,6 +626,7 @@ console.log(error);
   }).then(data =>{
   console.log(data);
   document.querySelector('#sherwin').innerHTML=data.energy;'  ';
+
   }).catch(error=>{
   console.log(error);
   });
@@ -603,6 +653,9 @@ console.log(error);
           <p class="text-xs font-weight-bold mb-0">282021</p>
         </td>
         <td class="align-middle text-center">
+          <p class="text-xs font-weight-bold mb-0">0x6Eb0a3A695e2102140a5A2950b4B7C1ec8c7D315  </p>
+        </td>
+        <td class="align-middle text-center">
           <span class="text-secondary text-xs font-weight-bold">1</span>
         </td>
         <td class="align-middle text-center">
@@ -615,6 +668,7 @@ console.log(error);
       }).then(data =>{
       console.log(data);
       document.querySelector('#xgab').innerHTML=data.energy;'  ';
+
       }).catch(error=>{
       console.log(error);
       });
@@ -641,6 +695,9 @@ console.log(error);
             <p class="text-xs font-weight-bold mb-0">280154</p>
           </td>
           <td class="align-middle text-center">
+            <p class="text-xs font-weight-bold mb-0">0x67A313424cBb08f2082d51c1ad0cBb8F278C4c3B   </p>
+          </td>
+          <td class="align-middle text-center">
             <span class="text-secondary text-xs font-weight-bold">1</span>
           </td>
           <td class="align-middle text-center">
@@ -653,6 +710,7 @@ console.log(error);
         }).then(data =>{
         console.log(data);
         document.querySelector('#anisah').innerHTML=data.energy;'  ';
+ 
         }).catch(error=>{
         console.log(error);
         });
@@ -679,6 +737,9 @@ console.log(error);
                   <p class="text-xs font-weight-bold mb-0">268121</p>
                 </td>
                 <td class="align-middle text-center">
+                  <p class="text-xs font-weight-bold mb-0">0xd247cabafeEfa63b56CfFF3FE5552E02D5C22515   </p>
+                </td>
+                <td class="align-middle text-center">
                   <span class="text-secondary text-xs font-weight-bold">1</span>
                 </td>
                 <td class="align-middle text-center">
@@ -691,6 +752,7 @@ console.log(error);
               }).then(data =>{
               console.log(data);
               document.querySelector('#nuggets').innerHTML=data.energy;'  ';
+
               }).catch(error=>{
               console.log(error);
               });
