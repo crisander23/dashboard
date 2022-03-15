@@ -125,7 +125,7 @@
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Horse Number</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Metamask Address</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Number of Pegas</th>
-
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Energy Checker</th>
                     </tr>
                   </thead>
@@ -157,6 +157,9 @@
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
+                        <div id="cystatus"></div>
+                      </td>
+                      <td class="align-middle text-center">
                         <div id="cy"></div>
                       </td>
                       <script>
@@ -166,6 +169,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#cy').innerHTML=data.energy;'  ';
+    document.querySelector('#cystatus').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
     console.log(error);
@@ -198,6 +202,9 @@
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
+                        <div id="drakestatus"></div>
+                      </td>
+                      <td class="align-middle text-center">
                         <div id="drake"></div>
                       </td>
                       <script>
@@ -207,6 +214,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#drake').innerHTML=data.energy;'  ';
+    document.querySelector('#drakestatus').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
     console.log(error);
@@ -239,6 +247,9 @@
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
+                        <div id="kleinstatus"></div>
+                      </td>
+                      <td class="align-middle text-center">
                         <div id="klein"></div>
                       </td>
                       <script>
@@ -248,7 +259,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#klein').innerHTML=data.energy;'  ';
-   
+    document.querySelector('#kleinstatus').innerHTML=data.inService;'  ';
 }).catch(error=>{
     console.log(error);
 });
@@ -281,6 +292,9 @@
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
+                        <div id="mieestatus"></div>
+                      </td>
+                      <td class="align-middle text-center">
                         <div id="miee"></div>
                       </td>
                       <script>
@@ -290,7 +304,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#miee').innerHTML=data.energy;'  ';
-
+    document.querySelector('#mieestatus').innerHTML=data.inService;'  ';
 }).catch(error=>{
     console.log(error);
 });
@@ -323,6 +337,9 @@
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
+                        <div id="kathstatus"></div>
+                      </td>
+                      <td class="align-middle text-center">
                         <div id="kath"></div>
                       </td>
                       <script>
@@ -332,7 +349,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#kath').innerHTML=data.energy;'  ';
-  
+    document.querySelector('#kathstatus').innerHTML=data.inService;'  ';
 }).catch(error=>{
     console.log(error);
 });
@@ -365,6 +382,9 @@
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
+    <div id="meepstatus"></div>
+  </td>
+  <td class="align-middle text-center">
     <div id="meep"></div>
   </td>
   <script>
@@ -374,7 +394,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#meep').innerHTML=data.energy;'  ';
-
+document.querySelector('#meepstatus').innerHTML=data.inService;'  ';
 }).catch(error=>{
 console.log(error);
 });
@@ -407,6 +427,9 @@ console.log(error);
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
+    <div id="echostatus"></div>
+  </td>
+  <td class="align-middle text-center">
     <div id="echo"></div>
   </td>
   <script>
@@ -416,7 +439,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#echo').innerHTML=data.energy;'  ';
-
+document.querySelector('#echostatus').innerHTML=data.inService;'  ';
 }).catch(error=>{
 console.log(error);
 });
@@ -449,6 +472,9 @@ console.log(error);
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
+    <div id="janestatus"></div>
+  </td>
+  <td class="align-middle text-center">
     <div id="jane"></div>
   </td>
   <script>
@@ -458,7 +484,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#jane').innerHTML=data.energy;'  ';
-
+document.querySelector('#janestatus').innerHTML=data.inService;'  ';
 }).catch(error=>{
 console.log(error);
 });
@@ -490,7 +516,10 @@ console.log(error);
   <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
- 
+  
+  <td class="align-middle text-center">
+    <div id="froistatus"></div>
+  </td>
   <td class="align-middle text-center">
     <div id="froi"></div>
   </td>
@@ -501,7 +530,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#froi').innerHTML=data.energy;'  ';
-
+document.querySelector('#froistatus').innerHTML=data.inService;'  ';
 }).catch(error=>{
 console.log(error);
 });
@@ -534,6 +563,9 @@ console.log(error);
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
+    <div id="notestatus"></div>
+  </td>
+  <td class="align-middle text-center">
     <div id="note"></div>
   </td>
   <script>
@@ -543,7 +575,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#note').innerHTML=data.energy;'  ';
-
+document.querySelector('#notestatus').innerHTML=data.inService;'  ';
 }).catch(error=>{
 console.log(error);
 });
@@ -576,6 +608,9 @@ console.log(error);
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
+    <div id="abyssstatus"></div>
+  </td>
+  <td class="align-middle text-center">
     <div id="abyss"></div>
   </td>
   <script>
@@ -585,7 +620,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#abyss').innerHTML=data.energy;'  ';
-
+document.querySelector('#abyssstatus').innerHTML=data.inService;'  ';
 }).catch(error=>{
 console.log(error);
 });
@@ -617,6 +652,9 @@ console.log(error);
   <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
     <td class="align-middle text-center">
+      <div id="sherwinstatus"></div>
+    </td>
+    <td class="align-middle text-center">
       <div id="sherwin"></div>
     </td>
     <script>
@@ -626,7 +664,7 @@ console.log(error);
   }).then(data =>{
   console.log(data);
   document.querySelector('#sherwin').innerHTML=data.energy;'  ';
-
+  document.querySelector('#sherwinstatus').innerHTML=data.inService;'  ';
   }).catch(error=>{
   console.log(error);
   });
@@ -659,6 +697,9 @@ console.log(error);
           <span class="text-secondary text-xs font-weight-bold">1</span>
         </td>
         <td class="align-middle text-center">
+          <div id="xgabstatus"></div>
+        </td>
+        <td class="align-middle text-center">
           <div id="xgab"></div>
         </td>
         <script>
@@ -668,7 +709,7 @@ console.log(error);
       }).then(data =>{
       console.log(data);
       document.querySelector('#xgab').innerHTML=data.energy;'  ';
-
+      document.querySelector('#xgabstatus').innerHTML=data.inService;'  ';
       }).catch(error=>{
       console.log(error);
       });
@@ -701,6 +742,9 @@ console.log(error);
             <span class="text-secondary text-xs font-weight-bold">1</span>
           </td>
           <td class="align-middle text-center">
+            <div id="anisahstatus"></div>
+          </td>
+          <td class="align-middle text-center">
             <div id="anisah"></div>
           </td>
           <script>
@@ -710,7 +754,7 @@ console.log(error);
         }).then(data =>{
         console.log(data);
         document.querySelector('#anisah').innerHTML=data.energy;'  ';
- 
+        document.querySelector('#anisahstatus').innerHTML=data.inService;'  ';
         }).catch(error=>{
         console.log(error);
         });
@@ -734,29 +778,62 @@ console.log(error);
               
                 </td>
                 <td class="align-middle text-center text-sm">
-                  <p class="text-xs font-weight-bold mb-0">268121</p>
+                  <p class="text-xs font-weight-bold mb-0">237566</p>
+                  <p class="text-xs font-weight-bold mb-0">206383</p>
+                  <p class="text-xs font-weight-bold mb-0">131211</p>
                 </td>
                 <td class="align-middle text-center">
                   <p class="text-xs font-weight-bold mb-0">0xd247cabafeEfa63b56CfFF3FE5552E02D5C22515   </p>
                 </td>
                 <td class="align-middle text-center">
-                  <span class="text-secondary text-xs font-weight-bold">1</span>
+                  <span class="text-secondary text-xs font-weight-bold">3</span>
+                </td>
+                <td class="align-middle text-center">
+                  <div id="nuggetsstatus"></div>
+                  <div id="nuggetsstatus1"></div>
+                  <div id="nuggetsstatus2"></div>
                 </td>
                 <td class="align-middle text-center">
                   <div id="nuggets"></div>
+                  <div id="nuggets1"></div>
+                  <div id="nuggets2"></div>
                 </td>
                 <script>
-                fetch('https://api-apollo.pegaxy.io/v1/pegas/268121')
+                fetch('https://api-apollo.pegaxy.io/v1/pegas/237566')
               .then(response =>{
               return response.json();
               }).then(data =>{
               console.log(data);
               document.querySelector('#nuggets').innerHTML=data.energy;'  ';
-
+              document.querySelector('#nuggetsstatus').innerHTML=data.inService;'  ';
               }).catch(error=>{
               console.log(error);
               });
               </script>
+                <script>
+                  fetch('https://api-apollo.pegaxy.io/v1/pegas/206383')
+                .then(response =>{
+                return response.json();
+                }).then(data =>{
+                console.log(data);
+                document.querySelector('#nuggets1').innerHTML=data.energy;'  ';
+                document.querySelector('#nuggetsstatus1').innerHTML=data.inService;'  ';
+                }).catch(error=>{
+                console.log(error);
+                });
+                </script>
+                  <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/131211')
+                  .then(response =>{
+                  return response.json();
+                  }).then(data =>{
+                  console.log(data);
+                  document.querySelector('#nuggets2').innerHTML=data.energy;'  ';
+                  document.querySelector('#nuggetsstatus2').innerHTML=data.inService;'  ';
+                  }).catch(error=>{
+                  console.log(error);
+                  });
+                  </script>
               </tr>     
                     <!-------------------------->
                   </tbody>
