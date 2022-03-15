@@ -79,6 +79,7 @@
         <li class="nav-item mt-3">
           <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Axie</h6>
         </li>
+  
     
     </div>
 
@@ -121,7 +122,7 @@
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Horse Number</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Metamask Address</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Number of Pegas</th>
-
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Energy Checker</th>
                     </tr>
                   </thead>
@@ -154,7 +155,9 @@
                         <span class="text-secondary text-xs font-weight-bold">1
                         </span>
                       </td>
-                 
+                      <td class="align-middle text-center">
+                        <div id="teststatus"></div>
+                      </td>
                       <td class="align-middle text-center">
                         <div id="test"></div>
                       </td>
@@ -165,7 +168,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#test').innerHTML=data.energy;'  ';
-
+    document.querySelector('#teststatus').innerHTML=data.inService;'  ';
    
 }).catch(error=>{
     console.log(error);
@@ -203,7 +206,9 @@
                         <span class="text-secondary text-xs font-weight-bold">1
                         </span>
                       </td>
-                 
+                      <td class="align-middle text-center">
+                        <div id="besnajstatus"></div>
+                      </td>
                       <td class="align-middle text-center">
                         <div id="besnaj"></div>
                       </td>
@@ -214,7 +219,7 @@
 }).then(data =>{
     console.log(data);
     document.querySelector('#besnaj').innerHTML=data.energy;'  ';
-  
+    document.querySelector('#besnajstatus').innerHTML=data.inService;'  ';
    
 }).catch(error=>{
     console.log(error);
@@ -256,7 +261,9 @@
                       <span class="text-secondary text-xs font-weight-bold">1
                       </span>
                     </td>
-               
+                    <td class="align-middle text-center">
+                      <div id="jeanstatus"></div>
+                    </td>
                     <td class="align-middle text-center">
                       <div id="jean"></div>
                     </td>
@@ -267,7 +274,7 @@
 }).then(data =>{
   console.log(data);
   document.querySelector('#jean').innerHTML=data.energy;'  ';
-
+  document.querySelector('#jeanstatus').innerHTML=data.inService;'  ';
  
 }).catch(error=>{
   console.log(error);
@@ -312,6 +319,9 @@
                 </td>
            
                 <td class="align-middle text-center">
+                  <div id="justinestatus"></div>
+                </td>
+                <td class="align-middle text-center">
                   <div id="justine"></div>
                 </td>
                 <script>
@@ -321,7 +331,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#justine').innerHTML=data.energy;'  ';
-
+document.querySelector('#justinestatus').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
 console.log(error);
@@ -367,7 +377,9 @@ console.log(error);
                 <span class="text-secondary text-xs font-weight-bold">1
                 </span>
               </td>
-         
+              <td class="align-middle text-center">
+                <div id="preciousstatus"></div>
+              </td>
               <td class="align-middle text-center">
                 <div id="precious"></div>
               </td>
@@ -378,7 +390,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#precious').innerHTML=data.energy;'  ';
-
+document.querySelector('#preciousstatus').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
 console.log(error);
@@ -425,7 +437,9 @@ console.log(error);
                     <span class="text-secondary text-xs font-weight-bold">1
                     </span>
                   </td>
-             
+                  <td class="align-middle text-center">
+                    <div id="maemaestatus"></div>
+                  </td>
                   <td class="align-middle text-center">
                     <div id="maemae"></div>
                   </td>
@@ -436,7 +450,7 @@ console.log(error);
     }).then(data =>{
     console.log(data);
     document.querySelector('#maemae').innerHTML=data.energy;'  ';
-
+    document.querySelector('#maemaestatus').innerHTML=data.inService;'  ';
     
     }).catch(error=>{
     console.log(error);
@@ -484,7 +498,9 @@ console.log(error);
                   <span class="text-secondary text-xs font-weight-bold">1
                   </span>
                 </td>
-           
+                <td class="align-middle text-center">
+                  <div id="melstatus"></div>
+                </td>
                 <td class="align-middle text-center">
                   <div id="mel"></div>
                 </td>
@@ -495,7 +511,7 @@ console.log(error);
   }).then(data =>{
   console.log(data);
   document.querySelector('#mel').innerHTML=data.energy;'  ';
-
+  document.querySelector('#melstatus').innerHTML=data.inService;'  ';
   
   }).catch(error=>{
   console.log(error);
@@ -546,7 +562,9 @@ console.log(error);
                   <span class="text-secondary text-xs font-weight-bold">1
                   </span>
                 </td>
-           
+                <td class="align-middle text-center">
+                  <div id="jerrydotesstatus"></div>
+                </td>
                 <td class="align-middle text-center">
                   <div id="jerrydotes"></div>
                 </td>
@@ -557,7 +575,7 @@ console.log(error);
   }).then(data =>{
   console.log(data);
   document.querySelector('#jerrydotes').innerHTML=data.energy;'  ';
-
+  document.querySelector('#jerrydotesstatus').innerHTML=data.inService;'  ';
   
   }).catch(error=>{
   console.log(error);
@@ -611,7 +629,9 @@ console.log(error);
                   <span class="text-secondary text-xs font-weight-bold">1
                   </span>
                 </td>
-           
+                <td class="align-middle text-center">
+                  <div id="wariestatus"></div>
+                </td>
                 <td class="align-middle text-center">
                   <div id="warie"></div>
                 </td>
@@ -622,8 +642,7 @@ console.log(error);
   }).then(data =>{
   console.log(data);
   document.querySelector('#warie').innerHTML=data.energy;'  ';
-
-  
+  document.querySelector('#wariestatus').innerHTML=data.inService;'  ';
   }).catch(error=>{
   console.log(error);
   });
@@ -679,7 +698,9 @@ console.log(error);
                 <span class="text-secondary text-xs font-weight-bold">1
                 </span>
               </td>
-         
+              <td class="align-middle text-center">
+                <div id="jessicastatus"></div>
+              </td>
               <td class="align-middle text-center">
                 <div id="jessica"></div>
               </td>
@@ -690,7 +711,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#jessica').innerHTML=data.energy;'  ';
-
+document.querySelector('#jessicastatus').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
 console.log(error);
