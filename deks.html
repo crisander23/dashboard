@@ -21,7 +21,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
-  RBV Scholar Dashboard
+    Material Dashboard 2 by Creative Tim
   </title>
 
   <!--     Fonts and icons     -->
@@ -43,7 +43,7 @@
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href="" target="_blank">
+      <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
         <img src="../assets/img/rbvvv.png" class="navbar-brand-img h-100" alt="main_logo">
         <span class="ms-1 font-weight-bold text-white">RBV Scholar Dashboard</span>
       </a>
@@ -56,7 +56,7 @@
           <h6 class="ps-4 ms-2 text-uppercase text-xs text-white font-weight-bolder opacity-8">Pegaxy</h6>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="../index.html">
+          <a class="nav-link text-white " href="../pages/index.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -64,7 +64,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white active bg-gradient-primary" href="../deks.html">
+          <a class="nav-link text-white active bg-gradient-primary" href="../pages/deks.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -72,7 +72,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white " href="../gab.html">
+          <a class="nav-link text-white " href="../pages/gab.html">
             <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
               <i class="material-icons opacity-10">table_view</i>
             </div>
@@ -123,9 +123,7 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Scholar</th>
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Discord ID</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Horse Number</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Metamask Address</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Number of Pegas</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Energy Checker</th>
                     </tr>
                   </thead>
@@ -151,30 +149,13 @@
                         <p class="text-xs font-weight-bold mb-0">42078</p>
                       </td>
                       <td class="align-middle text-center">
-                        <p class="text-xs font-weight-bold mb-0">0x890bdDAd101CAeB88b48dE6F737392956657162b </p>
-                      </td>
-                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="cystatus"></div>
+                        <a href="https://www.pegaxy.tech/inspector/42078" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+                          Energy
+                        </a>
                       </td>
-                      <td class="align-middle text-center">
-                        <div id="cy"></div>
-                      </td>
-                      <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/42078')
-.then(response =>{
-    return response.json();
-}).then(data =>{
-    console.log(data);
-    document.querySelector('#cy').innerHTML=data.energy;'  ';
-    document.querySelector('#cystatus').innerHTML=data.inService;'  ';
-
-}).catch(error=>{
-    console.log(error);
-});
-</script>
                     </tr>
                     <tr>
                       <td>
@@ -196,30 +177,13 @@
                         <p class="text-xs font-weight-bold mb-0">63983</p>
                       </td>
                       <td class="align-middle text-center">
-                        <p class="text-xs font-weight-bold mb-0">0x47e4D434bBa57E82ada0f938D7470bdAdD4E5f32 </p>
-                      </td>
-                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="drakestatus"></div>
+                        <a href="https://www.pegaxy.tech/inspector/63983" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+                          Energy
+                        </a>
                       </td>
-                      <td class="align-middle text-center">
-                        <div id="drake"></div>
-                      </td>
-                      <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/63983')
-.then(response =>{
-    return response.json();
-}).then(data =>{
-    console.log(data);
-    document.querySelector('#drake').innerHTML=data.energy;'  ';
-    document.querySelector('#drakestatus').innerHTML=data.inService;'  ';
-
-}).catch(error=>{
-    console.log(error);
-});
-</script>
                     </tr>
                     <tr>
                       <td>
@@ -241,29 +205,13 @@
                         <p class="text-xs font-weight-bold mb-0">48198</p>
                       </td>
                       <td class="align-middle text-center">
-                        <p class="text-xs font-weight-bold mb-0">0xa1b7378adF598071ceD7f36acfdeFcbBEB930Ad7 </p>
-                      </td>
-                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="kleinstatus"></div>
+                        <a href="https://www.pegaxy.tech/inspector/48198" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+                          Energy
+                        </a>
                       </td>
-                      <td class="align-middle text-center">
-                        <div id="klein"></div>
-                      </td>
-                      <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/48198')
-.then(response =>{
-    return response.json();
-}).then(data =>{
-    console.log(data);
-    document.querySelector('#klein').innerHTML=data.energy;'  ';
-    document.querySelector('#kleinstatus').innerHTML=data.inService;'  ';
-}).catch(error=>{
-    console.log(error);
-});
-</script>
                     </tr>
 <!------------------------------------------------------------>
                     <tr>
@@ -286,29 +234,13 @@
                         <p class="text-xs font-weight-bold mb-0">65087</p>
                       </td>
                       <td class="align-middle text-center">
-                        <p class="text-xs font-weight-bold mb-0">0x6d09d33817bAE239144E5006b0ADF0fc9f0b8AC4 </p>
-                      </td>
-                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="mieestatus"></div>
+                        <a href="https://www.pegaxy.tech/inspector/65087" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+                          Energy
+                        </a>
                       </td>
-                      <td class="align-middle text-center">
-                        <div id="miee"></div>
-                      </td>
-                      <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/65087')
-.then(response =>{
-    return response.json();
-}).then(data =>{
-    console.log(data);
-    document.querySelector('#miee').innerHTML=data.energy;'  ';
-    document.querySelector('#mieestatus').innerHTML=data.inService;'  ';
-}).catch(error=>{
-    console.log(error);
-});
-</script>
                     </tr>
                     <!------------------------------------------------------------>
                     <tr>
@@ -331,29 +263,13 @@
                         <p class="text-xs font-weight-bold mb-0">112838</p>
                       </td>
                       <td class="align-middle text-center">
-                        <p class="text-xs font-weight-bold mb-0">0xb3777095A3CfD13F887AA44Db7f5c7462B7c4Ed6 </p>
-                      </td>
-                      <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">1</span>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="kathstatus"></div>
+                        <a href="https://www.pegaxy.tech/inspector/112838" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+                          Energy
+                        </a>
                       </td>
-                      <td class="align-middle text-center">
-                        <div id="kath"></div>
-                      </td>
-                      <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/112838')
-.then(response =>{
-    return response.json();
-}).then(data =>{
-    console.log(data);
-    document.querySelector('#kath').innerHTML=data.energy;'  ';
-    document.querySelector('#kathstatus').innerHTML=data.inService;'  ';
-}).catch(error=>{
-    console.log(error);
-});
-</script>
                     </tr>
  <!------------------------------------------------------------>
  <tr>
@@ -376,29 +292,13 @@
     <p class="text-xs font-weight-bold mb-0">109909</p>
   </td>
   <td class="align-middle text-center">
-    <p class="text-xs font-weight-bold mb-0">0x33aFc4A2C28b02F24e0B49688f0285df6c9dbc90 </p>
-  </td>
-  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <div id="meepstatus"></div>
+    <a href="https://www.pegaxy.tech/inspector/109909" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+      Energy
+    </a>
   </td>
-  <td class="align-middle text-center">
-    <div id="meep"></div>
-  </td>
-  <script>
-  fetch('https://api-apollo.pegaxy.io/v1/pegas/109909')
-.then(response =>{
-return response.json();
-}).then(data =>{
-console.log(data);
-document.querySelector('#meep').innerHTML=data.energy;'  ';
-document.querySelector('#meepstatus').innerHTML=data.inService;'  ';
-}).catch(error=>{
-console.log(error);
-});
-</script>
 </tr>
  <!------------------------------------------------------------>
  <tr>
@@ -418,32 +318,16 @@ console.log(error);
 
   </td>
   <td class="align-middle text-center text-sm">
-    <p class="text-xs font-weight-bold mb-0">108836</p>
-  </td>
-  <td class="align-middle text-center">
-    <p class="text-xs font-weight-bold mb-0">0xb8C8e20A30496d05341992904D44D861640b8378 </p>
+    <p class="text-xs font-weight-bold mb-0">1088836</p>
   </td>
   <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <div id="echostatus"></div>
+    <a href="https://www.pegaxy.tech/inspector/1088836" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+      Energy
+    </a>
   </td>
-  <td class="align-middle text-center">
-    <div id="echo"></div>
-  </td>
-  <script>
-  fetch('https://api-apollo.pegaxy.io/v1/pegas/108836')
-.then(response =>{
-return response.json();
-}).then(data =>{
-console.log(data);
-document.querySelector('#echo').innerHTML=data.energy;'  ';
-document.querySelector('#echostatus').innerHTML=data.inService;'  ';
-}).catch(error=>{
-console.log(error);
-});
-</script>
 </tr>
 <!------------------------------------------------------------>
 <tr>
@@ -466,29 +350,13 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">119927</p>
   </td>
   <td class="align-middle text-center">
-    <p class="text-xs font-weight-bold mb-0">0x9EC5367c2Aac62B7d3F347c947Fb9cae2B8A242A </p>
-  </td>
-  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <div id="janestatus"></div>
+    <a href="https://www.pegaxy.tech/inspector/119927" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+      Energy
+    </a>
   </td>
-  <td class="align-middle text-center">
-    <div id="jane"></div>
-  </td>
-  <script>
-  fetch('https://api-apollo.pegaxy.io/v1/pegas/119927')
-.then(response =>{
-return response.json();
-}).then(data =>{
-console.log(data);
-document.querySelector('#jane').innerHTML=data.energy;'  ';
-document.querySelector('#janestatus').innerHTML=data.inService;'  ';
-}).catch(error=>{
-console.log(error);
-});
-</script>
 </tr>
 <!------------------------------------------------------------>
 <tr>
@@ -511,30 +379,13 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">138256</p>
   </td>
   <td class="align-middle text-center">
-    <p class="text-xs font-weight-bold mb-0">0x311e93eA47DD6c6583578eDf62EFB657E3623551 </p>
-  </td>
-  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
-  
   <td class="align-middle text-center">
-    <div id="froistatus"></div>
+    <a href="https://www.pegaxy.tech/inspector/138256" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+      Energy
+    </a>
   </td>
-  <td class="align-middle text-center">
-    <div id="froi"></div>
-  </td>
-  <script>
-  fetch('https://api-apollo.pegaxy.io/v1/pegas/138256')
-.then(response =>{
-return response.json();
-}).then(data =>{
-console.log(data);
-document.querySelector('#froi').innerHTML=data.energy;'  ';
-document.querySelector('#froistatus').innerHTML=data.inService;'  ';
-}).catch(error=>{
-console.log(error);
-});
-</script>
 </tr>
 <!------------------------------------------------------------>
 <tr>
@@ -557,29 +408,13 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">279823</p>
   </td>
   <td class="align-middle text-center">
-    <p class="text-xs font-weight-bold mb-0">0x015EF07A5a97F211456dab8ada76ED791e7A21DD </p>
-  </td>
-  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <div id="notestatus"></div>
+    <a href="https://www.pegaxy.tech/inspector/279823" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+      Energy
+    </a>
   </td>
-  <td class="align-middle text-center">
-    <div id="note"></div>
-  </td>
-  <script>
-  fetch('https://api-apollo.pegaxy.io/v1/pegas/279823')
-.then(response =>{
-return response.json();
-}).then(data =>{
-console.log(data);
-document.querySelector('#note').innerHTML=data.energy;'  ';
-document.querySelector('#notestatus').innerHTML=data.inService;'  ';
-}).catch(error=>{
-console.log(error);
-});
-</script>
 </tr>
 <!------------------------------------------------------------>
 <tr>
@@ -602,29 +437,13 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">281404</p>
   </td>
   <td class="align-middle text-center">
-    <p class="text-xs font-weight-bold mb-0">0x276fA04ec499f7eED075FF56c23733E2c582c646 </p>
-  </td>
-  <td class="align-middle text-center">
     <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <div id="abyssstatus"></div>
+    <a href="https://www.pegaxy.tech/inspector/281404" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+      Energy
+    </a>
   </td>
-  <td class="align-middle text-center">
-    <div id="abyss"></div>
-  </td>
-  <script>
-  fetch('https://api-apollo.pegaxy.io/v1/pegas/281404')
-.then(response =>{
-return response.json();
-}).then(data =>{
-console.log(data);
-document.querySelector('#abyss').innerHTML=data.energy;'  ';
-document.querySelector('#abyssstatus').innerHTML=data.inService;'  ';
-}).catch(error=>{
-console.log(error);
-});
-</script>
 </tr>
        <!------------------------------------------------------------>
 <tr>
@@ -647,28 +466,13 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">281893</p>
   </td>
   <td class="align-middle text-center">
-    <p class="text-xs font-weight-bold mb-0">0x0380D1130863963575A5B9703E9276Cb2FFa95BF </p>
+    <span class="text-secondary text-xs font-weight-bold">1</span>
   </td>
   <td class="align-middle text-center">
-    <span class="text-secondary text-xs font-weight-bold">1</span>
-    <td class="align-middle text-center">
-      <div id="sherwinstatus"></div>
-    </td>
-    <td class="align-middle text-center">
-      <div id="sherwin"></div>
-    </td>
-    <script>
-    fetch('https://api-apollo.pegaxy.io/v1/pegas/281893')
-  .then(response =>{
-  return response.json();
-  }).then(data =>{
-  console.log(data);
-  document.querySelector('#sherwin').innerHTML=data.energy;'  ';
-  document.querySelector('#sherwinstatus').innerHTML=data.inService;'  ';
-  }).catch(error=>{
-  console.log(error);
-  });
-  </script>
+    <a href="https://www.pegaxy.tech/inspector/281893" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+      Energy
+    </a>
+  </td>
 </tr>   
        <!------------------------------------------------------------>
        <tr>
@@ -691,29 +495,13 @@ console.log(error);
           <p class="text-xs font-weight-bold mb-0">282021</p>
         </td>
         <td class="align-middle text-center">
-          <p class="text-xs font-weight-bold mb-0">0x6Eb0a3A695e2102140a5A2950b4B7C1ec8c7D315  </p>
-        </td>
-        <td class="align-middle text-center">
           <span class="text-secondary text-xs font-weight-bold">1</span>
         </td>
         <td class="align-middle text-center">
-          <div id="xgabstatus"></div>
+          <a href="https://www.pegaxy.tech/inspector/282021" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+            Energy
+          </a>
         </td>
-        <td class="align-middle text-center">
-          <div id="xgab"></div>
-        </td>
-        <script>
-        fetch('https://api-apollo.pegaxy.io/v1/pegas/282021')
-      .then(response =>{
-      return response.json();
-      }).then(data =>{
-      console.log(data);
-      document.querySelector('#xgab').innerHTML=data.energy;'  ';
-      document.querySelector('#xgabstatus').innerHTML=data.inService;'  ';
-      }).catch(error=>{
-      console.log(error);
-      });
-      </script>
       </tr> 
         <!------------------------------------------------------------>
         <tr>
@@ -736,29 +524,13 @@ console.log(error);
             <p class="text-xs font-weight-bold mb-0">280154</p>
           </td>
           <td class="align-middle text-center">
-            <p class="text-xs font-weight-bold mb-0">0x67A313424cBb08f2082d51c1ad0cBb8F278C4c3B   </p>
-          </td>
-          <td class="align-middle text-center">
             <span class="text-secondary text-xs font-weight-bold">1</span>
           </td>
           <td class="align-middle text-center">
-            <div id="anisahstatus"></div>
+            <a href="https://www.pegaxy.tech/inspector/280154" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+              Energy
+            </a>
           </td>
-          <td class="align-middle text-center">
-            <div id="anisah"></div>
-          </td>
-          <script>
-          fetch('https://api-apollo.pegaxy.io/v1/pegas/280154')
-        .then(response =>{
-        return response.json();
-        }).then(data =>{
-        console.log(data);
-        document.querySelector('#anisah').innerHTML=data.energy;'  ';
-        document.querySelector('#anisahstatus').innerHTML=data.inService;'  ';
-        }).catch(error=>{
-        console.log(error);
-        });
-        </script>
         </tr>      
               <!------------------------------------------------------------>
               <tr>
@@ -778,62 +550,16 @@ console.log(error);
               
                 </td>
                 <td class="align-middle text-center text-sm">
-                  <p class="text-xs font-weight-bold mb-0">237566</p>
-                  <p class="text-xs font-weight-bold mb-0">206383</p>
-                  <p class="text-xs font-weight-bold mb-0">131211</p>
+                  <p class="text-xs font-weight-bold mb-0">268121</p>
                 </td>
                 <td class="align-middle text-center">
-                  <p class="text-xs font-weight-bold mb-0">0xd247cabafeEfa63b56CfFF3FE5552E02D5C22515   </p>
+                  <span class="text-secondary text-xs font-weight-bold">1</span>
                 </td>
                 <td class="align-middle text-center">
-                  <span class="text-secondary text-xs font-weight-bold">3</span>
+                  <a href="https://www.pegaxy.tech/inspector/268121" class="badge badge-sm bg-gradient-success" data-toggle="tooltip" data-original-title="Edit user">
+                    Energy
+                  </a>
                 </td>
-                <td class="align-middle text-center">
-                  <div id="nuggetsstatus"></div>
-                  <div id="nuggetsstatus1"></div>
-                  <div id="nuggetsstatus2"></div>
-                </td>
-                <td class="align-middle text-center">
-                  <div id="nuggets"></div>
-                  <div id="nuggets1"></div>
-                  <div id="nuggets2"></div>
-                </td>
-                <script>
-                fetch('https://api-apollo.pegaxy.io/v1/pegas/237566')
-              .then(response =>{
-              return response.json();
-              }).then(data =>{
-              console.log(data);
-              document.querySelector('#nuggets').innerHTML=data.energy;'  ';
-              document.querySelector('#nuggetsstatus').innerHTML=data.inService;'  ';
-              }).catch(error=>{
-              console.log(error);
-              });
-              </script>
-                <script>
-                  fetch('https://api-apollo.pegaxy.io/v1/pegas/206383')
-                .then(response =>{
-                return response.json();
-                }).then(data =>{
-                console.log(data);
-                document.querySelector('#nuggets1').innerHTML=data.energy;'  ';
-                document.querySelector('#nuggetsstatus1').innerHTML=data.inService;'  ';
-                }).catch(error=>{
-                console.log(error);
-                });
-                </script>
-                  <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/131211')
-                  .then(response =>{
-                  return response.json();
-                  }).then(data =>{
-                  console.log(data);
-                  document.querySelector('#nuggets2').innerHTML=data.energy;'  ';
-                  document.querySelector('#nuggetsstatus2').innerHTML=data.inService;'  ';
-                  }).catch(error=>{
-                  console.log(error);
-                  });
-                  </script>
               </tr>     
                     <!-------------------------->
                   </tbody>
