@@ -123,7 +123,7 @@
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Horse Number</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Metamask Address</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Number of Pegas</th>
-
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Energy Checker</th>
                     </tr>
                   </thead>
@@ -159,7 +159,9 @@
                       <span class="text-secondary text-xs font-weight-bold">1
                       </span>
                     </td>
-               
+                    <td class="align-middle text-center">
+                      <div id="michellestatus"></div>
+                    </td>
                     <td class="align-middle text-center">
                       <div id="michelle"></div>
                     </td>
@@ -170,7 +172,7 @@
 }).then(data =>{
   console.log(data);
   document.querySelector('#michelle').innerHTML=data.energy;'  ';
- 
+  document.querySelector('#michellestatus').innerHTML=data.inService;'  ';
  
 }).catch(error=>{
   console.log(error);
@@ -198,30 +200,64 @@
        
                     </td>
                     <td class="align-middle text-center text-sm">
-                      <p class="text-xs font-weight-bold mb-0">322567  </p>
+                      <p class="text-xs font-weight-bold mb-0">189578 </p>
+                      <p class="text-xs font-weight-bold mb-0">182913 </p>
+                      <p class="text-xs font-weight-bold mb-0">144269 </p>
                     </td>
                     <td class="align-middle text-center text-sm">
                       <p class="text-xs font-weight-bold mb-0">0x1807B64f2288522f697C3DE5Abe72C58CDDf5D6e </p>
                     </td>
                     <td class="align-middle text-center">
-                      <span class="text-secondary text-xs font-weight-bold">1
+                      <span class="text-secondary text-xs font-weight-bold">3
                       </span>
                     </td>
-               
+                    <td class="align-middle text-center">
+                      <div id="jlstatus"></div>
+                      <div id="jlstatus1"></div>
+                      <div id="jlstatus2"></div>
+                    </td>
                     <td class="align-middle text-center">
                       <div id="jl"></div>
+                      <div id="jl1"></div>
+                      <div id="jl2"></div>
                     </td>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/322567')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/189578 ')
 .then(response =>{
   return response.json();
 }).then(data =>{
   console.log(data);
   document.querySelector('#jl').innerHTML=data.energy;'  ';
- 
+  document.querySelector('#jlstatus').innerHTML=data.inService;'  ';
  
 }).catch(error=>{
   console.log(error);
+});
+</script>
+<script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/182913')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#jl1').innerHTML=data.energy;'  ';
+document.querySelector('#jlstatus1').innerHTML=data.inService;'  ';
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+<script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/144269')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#jl2').innerHTML=data.energy;'  ';
+document.querySelector('#jlstatus2').innerHTML=data.inService;'  ';
+
+}).catch(error=>{
+console.log(error);
 });
 </script>
 </tr>
@@ -255,7 +291,9 @@
                                 <span class="text-secondary text-xs font-weight-bold">1
                                 </span>
                               </td>
-                         
+                              <td class="align-middle text-center">
+                                <div id="nokkistatus"></div>
+                              </td>
                               <td class="align-middle text-center">
                                 <div id="nokki"></div>
                               </td>
@@ -266,7 +304,7 @@
           }).then(data =>{
             console.log(data);
             document.querySelector('#nokki').innerHTML=data.energy;'  ';
-           
+            document.querySelector('#nokkistatus').innerHTML=data.inService;'  ';
            
           }).catch(error=>{
             console.log(error);
@@ -302,7 +340,9 @@
                                       <span class="text-secondary text-xs font-weight-bold">1
                                       </span>
                                     </td>
-                               
+                                    <td class="align-middle text-center">
+                                      <div id="hatestatus"></div>
+                                    </td>
                                     <td class="align-middle text-center">
                                       <div id="hate"></div>
                                     </td>
@@ -313,7 +353,7 @@
                 }).then(data =>{
                   console.log(data);
                   document.querySelector('#hate').innerHTML=data.energy;'  ';
-                 
+                  document.querySelector('#hatestatus').innerHTML=data.inService;'  ';
                  
                 }).catch(error=>{
                   console.log(error);
@@ -350,7 +390,9 @@
                   <span class="text-secondary text-xs font-weight-bold">1
                   </span>
                 </td>
-           
+                <td class="align-middle text-center">
+                  <div id="ozonestatus"></div>
+                </td>
                 <td class="align-middle text-center">
                   <div id="ozone"></div>
                 </td>
@@ -361,7 +403,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#ozone').innerHTML=data.energy;'  ';
-
+document.querySelector('#ozonestatus').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
 console.log(error);
@@ -398,7 +440,9 @@ console.log(error);
     <span class="text-secondary text-xs font-weight-bold">1
     </span>
   </td>
-
+  <td class="align-middle text-center">
+    <div id="khenstatus"></div>
+  </td>
   <td class="align-middle text-center">
     <div id="khen"></div>
   </td>
@@ -409,7 +453,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#khen').innerHTML=data.energy;'  ';
-
+document.querySelector('#khenstatus').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
 console.log(error);
@@ -448,7 +492,9 @@ console.log(error);
     <span class="text-secondary text-xs font-weight-bold">1
     </span>
   </td>
-
+  <td class="align-middle text-center">
+    <div id="sheenastatus"></div>
+  </td>
   <td class="align-middle text-center">
     <div id="sheena"></div>
   </td>
@@ -459,7 +505,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#sheena').innerHTML=data.energy;'  ';
-
+document.querySelector('#sheenastatus').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
 console.log(error);
@@ -488,7 +534,8 @@ console.log(error);
 
   </td>
   <td class="align-middle text-center text-sm">
-    <p class="text-xs font-weight-bold mb-0">181606 | 268551   </p>
+    <p class="text-xs font-weight-bold mb-0">181606</p>
+    <p class="text-xs font-weight-bold mb-0">268551</p>
   </td>
   <td class="align-middle text-center text-sm">
     <p class="text-xs font-weight-bold mb-0">0x7daa0f909291A18341726D50932fA794fB582AdA </p>
@@ -497,7 +544,12 @@ console.log(error);
     <span class="text-secondary text-xs font-weight-bold">2
     </span>
   </td>
+  <td class="align-middle text-center">
+    <div  id="nicastatus"></div>
+    <div  id="nicastatus2"></div>
 
+   
+  </td>
   <td class="align-middle text-center">
     <div  id="nica"></div>
     <div  id="nica2"></div>
@@ -511,7 +563,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#nica').innerHTML=data.energy;'  ';
-
+document.querySelector('#nicastatus').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
 console.log(error);
@@ -524,7 +576,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#nica2').innerHTML=data.energy;'  ';
-
+document.querySelector('#nicastatus2').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
 console.log(error);
@@ -561,7 +613,9 @@ console.log(error);
     <span class="text-secondary text-xs font-weight-bold">1
     </span>
   </td>
-
+  <td class="align-middle text-center">
+    <div id="janostatus"></div>
+  </td>
   <td class="align-middle text-center">
     <div id="jano"></div>
   </td>
@@ -572,7 +626,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#jano').innerHTML=data.energy;'  ';
-
+document.querySelector('#janostatus').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
 console.log(error);
