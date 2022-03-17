@@ -408,7 +408,7 @@ console.log(error);
   <td class="align-middle text-center text-sm">
     <p class="text-xs font-weight-bold mb-0">182913    
       <p class="text-xs font-weight-bold mb-0">237566     
-        <p class="text-xs font-weight-bold mb-0">  
+        <p class="text-xs font-weight-bold mb-0">329485
     </p>
   </td>
   <td class="align-middle text-center">
@@ -448,12 +448,12 @@ console.log(error);
 });
 </script>
 <script>
-fetch('https://api-apollo.pegaxy.io/v1/pegas/')
+fetch('https://api-apollo.pegaxy.io/v1/pegas/329485')
 .then(response =>{
 return response.json();
 }).then(data =>{
 console.log(data);
-document.querySelector('#Jano').innerHTML=data.energy;'  ';
+document.querySelector('#Jano2').innerHTML=data.energy;'  ';
 document.querySelector('#Janostatus2').innerHTML=data.inService;'  ';
 
 }).catch(error=>{
