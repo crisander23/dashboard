@@ -466,7 +466,81 @@ console.log(error);
 </script>
 </tr>
 <!------------------------------------------------------------>
+<tr>
+  <td>
+    <div class="d-flex px-2 py-1">
+      <div>
+        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <h6 class="mb-0 text-sm">RBV | jane_</h6>
+       
+      </div>
+    </div>
+  </td>
+  <td>
+    <p class="text-xs font-weight-bold mb-0">jane_#8441</p>
 
+  </td>
+
+  <td class="align-middle text-center">
+    <p class="text-xs font-weight-bold mb-0">0x9EC5367c2Aac62B7d3F347c947Fb9cae2B8A242A </p>
+  </td>
+  <td class="align-middle text-center">
+    <span class="text-secondary text-xs font-weight-bold">3</span>
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">235279</p>
+    <p class="text-xs font-weight-bold mb-0">232532</p>
+    <p class="text-xs font-weight-bold mb-0">232785</p>
+  </td>
+  <td class="align-middle text-center">
+    <div id="janestatus"></div>
+    <div id="janestatus1"></div>
+    <div id="janestatus2"></div>
+  </td>
+  <td class="align-middle text-center">
+    <div id="jane"></div>
+    <div id="jane1"></div>
+    <div id="jane2"></div>
+  </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/235279')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#jane').innerHTML=data.energy;'  ';
+document.querySelector('#janestatus').innerHTML=data.inService;'  ';
+}).catch(error=>{
+console.log(error);
+});
+</script>
+<script>
+fetch('https://api-apollo.pegaxy.io/v1/pegas/232532')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#jane1').innerHTML=data.energy;'  ';
+document.querySelector('#janestatus1').innerHTML=data.inService;'  ';
+}).catch(error=>{
+console.log(error);
+});
+</script>
+<script>
+fetch('https://api-apollo.pegaxy.io/v1/pegas/232785')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#jane2').innerHTML=data.energy;'  ';
+document.querySelector('#janestatus2').innerHTML=data.inService;'  ';
+}).catch(error=>{
+console.log(error);
+});
+</script>
+</tr>
 <!------------------------------------------------------------>
 
 <!------------------------------------------------------------>
