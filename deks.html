@@ -328,9 +328,23 @@ console.log(error);
     <p class="text-xs font-weight-bold mb-0">62688 </p>
   </td>
   <td class="align-middle text-center">
-    <div id="jerrydotestatus"></div>
+    <div id="jerrydotesstatus"></div>
     <div id="jerrydotesstatus1"></div>
     <div id="jerrydotesstatus2"></div>
+    <script>
+fetch('https://api-apollo.pegaxy.io/v1/pegas/63983')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#jerrydotes1').innerHTML=data.energy;'  ';
+document.querySelector('#jerrydotesstatus1').innerHTML=data.inService;'  ';
+}).catch(error=>{
+console.log(error);
+});
+</script>
+  
+ 
   </td>
   <td class="align-middle text-center">
     <div id="jerrydotes"></div>
@@ -361,6 +375,7 @@ document.querySelector('#jerrydotesstatus1').innerHTML=data.inService;'  ';
 console.log(error);
 });
 </script>
+
 <script>
 fetch('https://api-apollo.pegaxy.io/v1/pegas/62688')
 .then(response =>{
@@ -420,7 +435,7 @@ return response.json();
 }).then(data =>{
 console.log(data);
 document.querySelector('#Michelle').innerHTML=data.energy;'  ';
-document.querySelector('#Michellesstatus').innerHTML=data.inService;'  ';
+document.querySelector('#Michellestatus').innerHTML=data.inService;'  ';
 }).catch(error=>{
 console.log(error);
 });
