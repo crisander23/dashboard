@@ -462,6 +462,86 @@ console.log(error);
 </script>
 </tr>
 <!----------------------------->
+<tr>
+  <td>
+    <div class="d-flex px-2 py-1">
+      <div>
+        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <h6 class="mb-0 text-sm">RBV | Ozone</h6>
+       
+      </div>
+    </div>
+  </td>
+  <td>
+    <p class="text-xs font-weight-bold mb-0">Ozone#0420</p>
+
+  </td>
+  
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">0x32F4Fe584aBCdB8775c62097EA826E56c0E74CB5 </p>
+  </td>
+  <td class="align-middle text-center">
+    <span class="text-secondary text-xs font-weight-bold">3
+    </span>
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">282021      
+      <p class="text-xs font-weight-bold mb-0">281404      
+        <p class="text-xs font-weight-bold mb-0">108836  
+    </p>
+  </td>
+  <td class="align-middle text-center">
+    <div id="Ozonestatus"></div>
+    <div id="Ozonestatus1"></div>
+    <div id="Ozonestatus2"></div>
+  </td>
+  <td class="align-middle text-center">
+    <div id="Ozone"></div>
+    <div id="Ozone1"></div>
+    <div id="Ozone2"></div>
+  </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/282021')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#Ozone').innerHTML=data.energy;'  ';
+document.querySelector('#Ozonestatus').innerHTML=data.inService;'  ';
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+<script>
+fetch('https://api-apollo.pegaxy.io/v1/pegas/281404')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#Ozone1').innerHTML=data.energy;'  ';
+document.querySelector('#Ozonestatus1').innerHTML=data.inService;'  ';
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+<script>
+fetch('https://api-apollo.pegaxy.io/v1/pegas/108836')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#Ozone2').innerHTML=data.energy;'  ';
+document.querySelector('#Ozonestatus2').innerHTML=data.inService;'  ';
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+</tr>
                   <!-------------------------->
                   </tbody>
                 </table>
