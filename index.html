@@ -462,6 +462,87 @@ console.log(error);
 </script>
 </tr>
 <!----------------------------->
+<tr>
+  <td>
+    <div class="d-flex px-2 py-1">
+      <div>
+        <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <h6 class="mb-0 text-sm">RBV | GABSUUY</h6>
+       
+      </div>
+    </div>
+  </td>
+  <td>
+    <p class="text-xs font-weight-bold mb-0">XGab | KUMAIN KANA?#9941</p>
+
+  </td>
+  
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">0x6Eb0a3A695e2102140a5A2950b4B7C1ec8c7D315 </p>
+  </td>
+  <td class="align-middle text-center">
+    <span class="text-secondary text-xs font-weight-bold">3
+    </span>
+  </td>
+  <td class="align-middle text-center text-sm">
+    <p class="text-xs font-weight-bold mb-0">260937       
+      <p class="text-xs font-weight-bold mb-0">267968       
+        <p class="text-xs font-weight-bold mb-0">  279399 
+    </p>
+  </td>
+  <td class="align-middle text-center">
+    <div id="GABSUUYstatus"></div>
+    <div id="GABSUUYstatus1"></div>
+    <div id="GABSUUYstatus2"></div>
+  </td>
+  <td class="align-middle text-center">
+    <div id="GABSUUY"></div>
+    <div id="GABSUUY1"></div>
+    <div id="GABSUUY2"></div>
+  </td>
+  <script>
+  fetch('https://api-apollo.pegaxy.io/v1/pegas/260937')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#GABSUUY').innerHTML=data.energy;'  ';
+document.querySelector('#GABSUUYstatus').innerHTML=data.inService;'  ';
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+<script>
+fetch('https://api-apollo.pegaxy.io/v1/pegas/267968')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#GABSUUY1').innerHTML=data.energy;'  ';
+document.querySelector('#GABSUUYstatus1').innerHTML=data.inService;'  ';
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+<script>
+fetch('https://api-apollo.pegaxy.io/v1/pegas/279399')
+.then(response =>{
+return response.json();
+}).then(data =>{
+console.log(data);
+document.querySelector('#GABSUUY2').innerHTML=data.energy;'  ';
+document.querySelector('#GABSUUYstatus2').innerHTML=data.inService;'  ';
+
+}).catch(error=>{
+console.log(error);
+});
+</script>
+</tr>
+   <!-------------------------->
                   <!-------------------------->
                   </tbody>
                 </table>
