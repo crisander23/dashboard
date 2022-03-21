@@ -543,6 +543,89 @@ console.log(error);
 </script>
 </tr>
                   <!-------------------------->
+
+                  <tr>
+                    <td>
+                      <div class="d-flex px-2 py-1">
+                        <div>
+                          <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                        </div>
+                        <div class="d-flex flex-column justify-content-center">
+                          <h6 class="mb-0 text-sm">RBV | Nher Win</h6>
+                         
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="text-xs font-weight-bold mb-0">Nher Win#1363</p>
+                  
+                    </td>
+                    
+                    <td class="align-middle text-center text-sm">
+                      <p class="text-xs font-weight-bold mb-0">0xED0B76d5F2cdBca110148c0C37493E144C9Fc65E  </p>
+                    </td>
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xs font-weight-bold">2
+                      </span>
+                    </td>
+                    <td class="align-middle text-center text-sm">
+                      <p class="text-xs font-weight-bold mb-0">281094        
+                        <p class="text-xs font-weight-bold mb-0">279823       
+                          <p class="text-xs font-weight-bold mb-0">   
+                      </p>
+                    </td>
+                    <td class="align-middle text-center">
+                      <div id="Nherstatus"></div>
+                      <div id="Nherstatus1"></div>
+                      <div id="Nherstatus2"></div>
+                    </td>
+                    <td class="align-middle text-center">
+                      <div id="Nher"></div>
+                      <div id="Nher1"></div>
+                      <div id="Nher2"></div>
+                    </td>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/281094')
+                  .then(response =>{
+                  return response.json();
+                  }).then(data =>{
+                  console.log(data);
+                  document.querySelector('#Nher').innerHTML=data.energy;'  ';
+                  document.querySelector('#Nherstatus').innerHTML=data.inService;'  ';
+                  
+                  }).catch(error=>{
+                  console.log(error);
+                  });
+                  </script>
+                  <script>
+                  fetch('https://api-apollo.pegaxy.io/v1/pegas/279823')
+                  .then(response =>{
+                  return response.json();
+                  }).then(data =>{
+                  console.log(data);
+                  document.querySelector('#Nher1').innerHTML=data.energy;'  ';
+                  document.querySelector('#Nherstatus1').innerHTML=data.inService;'  ';
+                  
+                  }).catch(error=>{
+                  console.log(error);
+                  });
+                  </script>
+                  <script>
+                  fetch('https://api-apollo.pegaxy.io/v1/pegas/')
+                  .then(response =>{
+                  return response.json();
+                  }).then(data =>{
+                  console.log(data);
+                  document.querySelector('#Nher2').innerHTML=data.energy;'  ';
+                  document.querySelector('#Nherstatus2').innerHTML=data.inService;'  ';
+                  
+                  }).catch(error=>{
+                  console.log(error);
+                  });
+                  </script>
+                  </tr>
+
+                  <!--------------------------------->
                   </tbody>
                 </table>
               </div>
