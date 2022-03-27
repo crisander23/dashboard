@@ -869,6 +869,86 @@
                     });
                     </script>
                     </tr>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | Dyulyan  </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Dyulyan#7191</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0x1fd0aCB6694e1ae8F7c0934a694FE4263Bd972d9 </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">369899      
+                          <p class="text-xs font-weight-bold mb-0">369365      
+                            <p class="text-xs font-weight-bold mb-0">369180
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="dyulstatus"></div>
+                        <div id="dyulstatus1"></div>
+                        <div id="dyulstatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="dyul"></div>
+                        <div id="dyul1"></div>
+                        <div id="dyul2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/369899')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#dyul').innerHTML=data.energy;'  ';
+                    document.querySelector('#dyulstatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/369365')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#dyul1').innerHTML=data.energy;'  ';
+                    document.querySelector('#dyulstatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/369180')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#dyul2').innerHTML=data.energy;'  ';
+                    document.querySelector('#dyulstatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
                   </tbody>
                 </table>
               </div>
