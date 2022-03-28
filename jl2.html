@@ -171,473 +171,73 @@
                             <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">RBV | Grita </h6>
+                            <h6 class="mb-0 text-sm">RBV | Meow </h6>
                            
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Grita#3061</p>
+                        <p class="text-xs font-weight-bold mb-0">Marckyy#8454</p>
                     
                       </td>
                       
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0xE269A29B3763656837Ba8f970F9331becF5c0829 </p>
+                        <p class="text-xs font-weight-bold mb-0">0xf0fB428f0CFaE570A60Ea402b89e47708Eb3FE0f </p>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">3
                         </span>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">356008    
-                          <p class="text-xs font-weight-bold mb-0">356000    
-                            <p class="text-xs font-weight-bold mb-0">355991
+                        <p class="text-xs font-weight-bold mb-0">346641    
+                          <p class="text-xs font-weight-bold mb-0">346407    
+                            <p class="text-xs font-weight-bold mb-0">346401
                         </p>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="gritastatus"></div>
-                        <div id="gritastatus1"></div>
-                        <div id="gritastatus2"></div>
+                        <div id="marckystatus"></div>
+                        <div id="marckystatus1"></div>
+                        <div id="marckystatus2"></div>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="grita"></div>
-                        <div id="grita1"></div>
-                        <div id="grita2"></div>
+                        <div id="marcky"></div>
+                        <div id="marcky1"></div>
+                        <div id="marcky2"></div>
                       </td>
                       <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/356008')
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/346641')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#grita').innerHTML=data.energy;'  ';
-                    document.querySelector('#gritastatus').innerHTML=data.inService;'  ';
+                    document.querySelector('#marcky').innerHTML=data.energy;'  ';
+                    document.querySelector('#marckystatus').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/356000')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/346407')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#grita1').innerHTML=data.energy;'  ';
-                    document.querySelector('#gritastatus1').innerHTML=data.inService;'  ';
+                    document.querySelector('#marcky1').innerHTML=data.energy;'  ';
+                    document.querySelector('#marckystatus1').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/355991')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/346401')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#grita2').innerHTML=data.energy;'  ';
-                    document.querySelector('#gritastatus2').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    </tr>
-                    <tr class="info" >
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">Hoshi | RBV </h6>
-                           
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Hoshi#3176</p>
-                    
-                      </td>
-                      
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0xc52D4aECB62BF041E2BA3928530751D953c60110 </p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">3
-                        </span>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">338997    
-                          <p class="text-xs font-weight-bold mb-0">338961    
-                            <p class="text-xs font-weight-bold mb-0">343399
-                        </p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div id="hoshistatus"></div>
-                        <div id="hoshistatus1"></div>
-                        <div id="hoshistatus2"></div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div id="hoshi"></div>
-                        <div id="hoshi1"></div>
-                        <div id="hoshi2"></div>
-                      </td>
-                      <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/338997')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#hoshi').innerHTML=data.energy;'  ';
-                    document.querySelector('#hoshistatus').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/338961')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#hoshi1').innerHTML=data.energy;'  ';
-                    document.querySelector('#hoshistatus1').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/343399')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#hoshi2').innerHTML=data.energy;'  ';
-                    document.querySelector('#hoshistatus2').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    </tr>
-                    <tr class="info" >
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">RBV | Nher Win  </h6>
-                           
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Nher Win#1363</p>
-                    
-                      </td>
-                      
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0xED0B76d5F2cdBca110148c0C37493E144C9Fc65E </p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">3
-                        </span>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">369778      
-                          <p class="text-xs font-weight-bold mb-0">368841      
-                            <p class="text-xs font-weight-bold mb-0">368308
-                        </p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div id="nherwinstatus"></div>
-                        <div id="nherwinstatus1"></div>
-                        <div id="nherwinstatus2"></div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div id="nherwin"></div>
-                        <div id="nherwin1"></div>
-                        <div id="nherwin2"></div>
-                      </td>
-                      <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/369778')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#nherwin').innerHTML=data.energy;'  ';
-                    document.querySelector('#nherwinstatus').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/368841')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#nherwin1').innerHTML=data.energy;'  ';
-                    document.querySelector('#nherwinstatus1').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/368308')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#nherwin2').innerHTML=data.energy;'  ';
-                    document.querySelector('#nherwinstatus2').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    </tr>
-                    <tr class="info" >
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">RBV | Jano  </h6>
-                           
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Jano#2089</p>
-                    
-                      </td>
-                      
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0x41D7667967CE06BF7f6DE19Cf10f02ea7B139d6A </p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">3
-                        </span>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">182913     
-                          <p class="text-xs font-weight-bold mb-0">237566      
-                            <p class="text-xs font-weight-bold mb-0">329485
-                        </p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div id="janostatus"></div>
-                        <div id="janostatus1"></div>
-                        <div id="janostatus2"></div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div id="jano"></div>
-                        <div id="jano1"></div>
-                        <div id="jano2"></div>
-                      </td>
-                      <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/182913')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#jano').innerHTML=data.energy;'  ';
-                    document.querySelector('#janostatus').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/237566')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#jano1').innerHTML=data.energy;'  ';
-                    document.querySelector('#janostatus1').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/329485')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#jano2').innerHTML=data.energy;'  ';
-                    document.querySelector('#janostatus2').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    </tr>
-                    <tr class="info" >
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">RBV | Nich  </h6>
-                           
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">Nich#9852</p>
-                    
-                      </td>
-                      
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0x3745C10CAAb13b2f8E8C371c98Aa145bD6707802 </p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">3
-                        </span>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">371995      
-                          <p class="text-xs font-weight-bold mb-0">371898      
-                            <p class="text-xs font-weight-bold mb-0">371802
-                        </p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div id="nichstatus"></div>
-                        <div id="nichstatus1"></div>
-                        <div id="nichstatus2"></div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div id="nich"></div>
-                        <div id="nich1"></div>
-                        <div id="nich2"></div>
-                      </td>
-                      <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/371995')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#nich').innerHTML=data.energy;'  ';
-                    document.querySelector('#nichstatus').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/371898')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#nich1').innerHTML=data.energy;'  ';
-                    document.querySelector('#nichstatus1').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/371802')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#nich2').innerHTML=data.energy;'  ';
-                    document.querySelector('#nichstatus2').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    </tr>
-                    <tr class="info" >
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">RBV | Khen </h6>
-                           
-                          </div>
-                        </div>
-                      </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0">RBV | Khen#6877</p>
-                    
-                      </td>
-                      
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0xeb8cBa070F545895594b87029D43Aa38A9e83e02 </p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">3
-                        </span>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">346992    
-                          <p class="text-xs font-weight-bold mb-0">346732    
-                            <p class="text-xs font-weight-bold mb-0">346674 
-                        </p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div id="khenstatus"></div>
-                        <div id="khenstatus1"></div>
-                        <div id="khenstatus2"></div>
-                      </td>
-                      <td class="align-middle text-center">
-                        <div id="khen"></div>
-                        <div id="khen1"></div>
-                        <div id="khen2"></div>
-                      </td>
-                      <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/346992')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#khen').innerHTML=data.energy;'  ';
-                    document.querySelector('#khenstatus').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/346732')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#khen1').innerHTML=data.energy;'  ';
-                    document.querySelector('#khenstatus1').innerHTML=data.inService;'  ';
-                    
-                    }).catch(error=>{
-                    console.log(error);
-                    });
-                    </script>
-                    <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/346674')
-                    .then(response =>{
-                    return response.json();
-                    }).then(data =>{
-                    console.log(data);
-                    document.querySelector('#khen2').innerHTML=data.energy;'  ';
-                    document.querySelector('#khenstatus2').innerHTML=data.inService;'  ';
+                    document.querySelector('#marcky2').innerHTML=data.energy;'  ';
+                    document.querySelector('#marckystatus2').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
@@ -731,73 +331,73 @@
                             <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">RBV | Marckyy </h6>
+                            <h6 class="mb-0 text-sm">RBV | Stephanie Angel </h6>
                            
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Marckyy#8454</p>
+                        <p class="text-xs font-weight-bold mb-0">Stephanie Angel#3867</p>
                     
                       </td>
                       
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0xf0fB428f0CFaE570A60Ea402b89e47708Eb3FE0f </p>
+                        <p class="text-xs font-weight-bold mb-0">0x88eF70A9dC51E02Fdf57D1E5C1335c730d70e368 </p>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">3
                         </span>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">346641    
-                          <p class="text-xs font-weight-bold mb-0">346407    
-                            <p class="text-xs font-weight-bold mb-0">346401
+                        <p class="text-xs font-weight-bold mb-0">369572    
+                          <p class="text-xs font-weight-bold mb-0">352180    
+                            <p class="text-xs font-weight-bold mb-0">351246
                         </p>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="marckystatus"></div>
-                        <div id="marckystatus1"></div>
-                        <div id="marckystatus2"></div>
+                        <div id="stephanieastatus"></div>
+                        <div id="stephanieastatus1"></div>
+                        <div id="stephanieastatus2"></div>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="marcky"></div>
-                        <div id="marcky1"></div>
-                        <div id="marcky2"></div>
+                        <div id="stephaniea"></div>
+                        <div id="stephaniea1"></div>
+                        <div id="stephaniea2"></div>
                       </td>
                       <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/346641')
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/369572')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#marcky').innerHTML=data.energy;'  ';
-                    document.querySelector('#marckystatus').innerHTML=data.inService;'  ';
+                    document.querySelector('#stephaniea').innerHTML=data.energy;'  ';
+                    document.querySelector('#stephanieastatus').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/346407')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/352180')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#marcky1').innerHTML=data.energy;'  ';
-                    document.querySelector('#marckystatus1').innerHTML=data.inService;'  ';
+                    document.querySelector('#stephaniea1').innerHTML=data.energy;'  ';
+                    document.querySelector('#stephanieastatus1').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/346401')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/351246')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#marcky2').innerHTML=data.energy;'  ';
-                    document.querySelector('#marckystatus2').innerHTML=data.inService;'  ';
+                    document.querySelector('#stephaniea2').innerHTML=data.energy;'  ';
+                    document.querySelector('#stephanieastatus2').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
@@ -811,73 +411,73 @@
                             <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">RBV| Maemae  </h6>
+                            <h6 class="mb-0 text-sm">RBV | Grita </h6>
                            
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Maemae#8069</p>
+                        <p class="text-xs font-weight-bold mb-0">Grita#3061</p>
                     
                       </td>
                       
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0x5bA83eb53D1f20CC81e84EA8AC360A605e664C96 </p>
+                        <p class="text-xs font-weight-bold mb-0">0xE269A29B3763656837Ba8f970F9331becF5c0829 </p>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">3
                         </span>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">138256      
-                          <p class="text-xs font-weight-bold mb-0">85028      
-                            <p class="text-xs font-weight-bold mb-0">112838
+                        <p class="text-xs font-weight-bold mb-0">356008    
+                          <p class="text-xs font-weight-bold mb-0">356000    
+                            <p class="text-xs font-weight-bold mb-0">355991
                         </p>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="maestatus"></div>
-                        <div id="maestatus1"></div>
-                        <div id="maestatus2"></div>
+                        <div id="gritastatus"></div>
+                        <div id="gritastatus1"></div>
+                        <div id="gritastatus2"></div>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="mae"></div>
-                        <div id="mae1"></div>
-                        <div id="mae2"></div>
+                        <div id="grita"></div>
+                        <div id="grita1"></div>
+                        <div id="grita2"></div>
                       </td>
                       <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/138256')
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/356008')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#mae').innerHTML=data.energy;'  ';
-                    document.querySelector('#maestatus').innerHTML=data.inService;'  ';
+                    document.querySelector('#grita').innerHTML=data.energy;'  ';
+                    document.querySelector('#gritastatus').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/85028')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/356000')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#mae1').innerHTML=data.energy;'  ';
-                    document.querySelector('#maestatus1').innerHTML=data.inService;'  ';
+                    document.querySelector('#grita1').innerHTML=data.energy;'  ';
+                    document.querySelector('#gritastatus1').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/112838')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/355991')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#mae2').innerHTML=data.energy;'  ';
-                    document.querySelector('#maestatus2').innerHTML=data.inService;'  ';
+                    document.querySelector('#grita2').innerHTML=data.energy;'  ';
+                    document.querySelector('#gritastatus2').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
@@ -891,73 +491,473 @@
                             <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">A 15 Mariz | RBV </h6>
+                            <h6 class="mb-0 text-sm">RBV | Ayps  </h6>
                            
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">A 15 | Mariz#1496</p>
+                        <p class="text-xs font-weight-bold mb-0">ayps#1066</p>
                     
                       </td>
                       
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0xEbe5f46136736fef1e0749B8f3f305Bd4c83DC5f </p>
+                        <p class="text-xs font-weight-bold mb-0">0x45CBAA167e492a214138e32C5D66790e13243dFd </p>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">3
                         </span>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">371637    
-                          <p class="text-xs font-weight-bold mb-0">343536    
-                            <p class="text-xs font-weight-bold mb-0">343375
+                        <p class="text-xs font-weight-bold mb-0">361191     
+                          <p class="text-xs font-weight-bold mb-0">358371     
+                            <p class="text-xs font-weight-bold mb-0">357439
                         </p>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="marizstatus"></div>
-                        <div id="marizstatus1"></div>
-                        <div id="marizstatus2"></div>
+                        <div id="aypsstatus"></div>
+                        <div id="aypsstatus1"></div>
+                        <div id="aypsstatus2"></div>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="mariz"></div>
-                        <div id="mariz1"></div>
-                        <div id="mariz2"></div>
+                        <div id="ayps"></div>
+                        <div id="ayps1"></div>
+                        <div id="ayps2"></div>
                       </td>
                       <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/371637')
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/361191')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#mariz').innerHTML=data.energy;'  ';
-                    document.querySelector('#marizstatus').innerHTML=data.inService;'  ';
+                    document.querySelector('#ayps').innerHTML=data.energy;'  ';
+                    document.querySelector('#aypsstatus').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/343536')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/358371')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#mariz1').innerHTML=data.energy;'  ';
-                    document.querySelector('#marizstatus1').innerHTML=data.inService;'  ';
+                    document.querySelector('#ayps1').innerHTML=data.energy;'  ';
+                    document.querySelector('#aypsstatus1').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/343375')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/357439')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#mariz2').innerHTML=data.energy;'  ';
-                    document.querySelector('#marizstatus2').innerHTML=data.inService;'  ';
+                    document.querySelector('#ayps2').innerHTML=data.energy;'  ';
+                    document.querySelector('#aypsstatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | Shaileepuff  </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">shaileepuff#4763</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0xc0c35dbD7557645c0794072E880047cE59Ea5b5e </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">365294     
+                          <p class="text-xs font-weight-bold mb-0">365025     
+                            <p class="text-xs font-weight-bold mb-0">356310
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="elishastatus"></div>
+                        <div id="elishastatus1"></div>
+                        <div id="elishastatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="elisha"></div>
+                        <div id="elisha1"></div>
+                        <div id="elisha2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/365294')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#elisha').innerHTML=data.energy;'  ';
+                    document.querySelector('#elishastatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/356025')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#elisha1').innerHTML=data.energy;'  ';
+                    document.querySelector('#elishastatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/365310')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#elisha2').innerHTML=data.energy;'  ';
+                    document.querySelector('#elishastatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | Ewickuh  </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">ewickuh#7214</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0x8c064c79bD1A1FEaB647c5b3cf0de4dC2996A4A6 </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">374936      
+                          <p class="text-xs font-weight-bold mb-0">374599      
+                            <p class="text-xs font-weight-bold mb-0">374304
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="erickastatus"></div>
+                        <div id="erickastatus1"></div>
+                        <div id="erickastatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="ericka"></div>
+                        <div id="ericka1"></div>
+                        <div id="ericka2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/374936')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#ericka').innerHTML=data.energy;'  ';
+                    document.querySelector('#erickastatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/374599')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#ericka1').innerHTML=data.energy;'  ';
+                    document.querySelector('#erickastatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/374304')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#ericka2').innerHTML=data.energy;'  ';
+                    document.querySelector('#erickastatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | Erina  </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Erina Nakiri#2236</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0x158F53e1cf69E4c6345B2C46c41fEBA505F5Ac48 </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">370521      
+                          <p class="text-xs font-weight-bold mb-0">370784      
+                            <p class="text-xs font-weight-bold mb-0">370790
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="erinastatus"></div>
+                        <div id="erinastatus1"></div>
+                        <div id="erinastatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="erina"></div>
+                        <div id="erina1"></div>
+                        <div id="erina2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/370521')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#erina').innerHTML=data.energy;'  ';
+                    document.querySelector('#erinastatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/370784')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#erina1').innerHTML=data.energy;'  ';
+                    document.querySelector('#erinastatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/370790')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#erina2').innerHTML=data.energy;'  ';
+                    document.querySelector('#erinastatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | aiesha  </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Aiesha#6605</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0xE9214E03e523A72EdF442415623AD8c007A3F4cb </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">369772      
+                          <p class="text-xs font-weight-bold mb-0">369708      
+                            <p class="text-xs font-weight-bold mb-0">368127
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="aieshastatus"></div>
+                        <div id="aieshastatus1"></div>
+                        <div id="aieshastatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="aiesha"></div>
+                        <div id="aiesha1"></div>
+                        <div id="aiesha2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/369772')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#aiesha').innerHTML=data.energy;'  ';
+                    document.querySelector('#aieshastatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/369708')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#aiesha1').innerHTML=data.energy;'  ';
+                    document.querySelector('#aieshastatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/368127')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#aiesha2').innerHTML=data.energy;'  ';
+                    document.querySelector('#aieshastatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | Rayana  </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Rayana#6835</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0x9608c5C3854da617B28A3AceEaC937EA94cDA00C </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">371490      
+                          <p class="text-xs font-weight-bold mb-0">371471      
+                            <p class="text-xs font-weight-bold mb-0">367531
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="rayanastatus"></div>
+                        <div id="rayanastatus1"></div>
+                        <div id="rayanastatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="rayana"></div>
+                        <div id="rayana1"></div>
+                        <div id="rayana2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/371490')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#rayana').innerHTML=data.energy;'  ';
+                    document.querySelector('#rayanastatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/371471')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#rayana1').innerHTML=data.energy;'  ';
+                    document.querySelector('#rayanastatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/367531')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#rayana2').innerHTML=data.energy;'  ';
+                    document.querySelector('#rayanastatus2').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
