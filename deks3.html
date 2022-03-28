@@ -310,7 +310,167 @@
                                                             </script>
                                                             </tr>
                                                              <!-------------------------->
+                                                             <tr>
+                                                              <td>
+                                                                <div class="d-flex px-2 py-1">
+                                                                  <div>
+                                                                    <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                                                                  </div>
+                                                                  <div class="d-flex flex-column justify-content-center">
+                                                                    <h6 class="mb-0 text-sm">RBV | Ayla  </h6>
+                                                                   
+                                                                  </div>
+                                                                </div>
+                                                              </td>
+                                                              <td>
+                                                                <p class="text-xs font-weight-bold mb-0">ayla#7533</p>
+                                                            
+                                                              </td>
+                                                              
+                                                              <td class="align-middle text-center text-sm">
+                                                                <p class="text-xs font-weight-bold mb-0">0x12118AA63ed6b02c1a5130F14b8BAdf3F12E2219 </p>
+                                                              </td>
+                                                              <td class="align-middle text-center">
+                                                                <span class="text-secondary text-xs font-weight-bold">3
+                                                                </span>
+                                                              </td>
+                                                              <td class="align-middle text-center text-sm">
+                                                                <p class="text-xs font-weight-bold mb-0">375843      
+                                                                  <p class="text-xs font-weight-bold mb-0">375801      
+                                                                    <p class="text-xs font-weight-bold mb-0">375119
+                                                                </p>
+                                                              </td>
+                                                              <td class="align-middle text-center">
+                                                                <div id="aylastatus"></div>
+                                                                <div id="aylastatus1"></div>
+                                                                <div id="aylastatus2"></div>
+                                                              </td>
+                                                              <td class="align-middle text-center">
+                                                                <div id="ayla"></div>
+                                                                <div id="ayla1"></div>
+                                                                <div id="ayla2"></div>
+                                                              </td>
+                                                              <script>
+                                                              fetch('https://api-apollo.pegaxy.io/v1/pegas/375843')
+                                                            .then(response =>{
+                                                            return response.json();
+                                                            }).then(data =>{
+                                                            console.log(data);
+                                                            document.querySelector('#ayla').innerHTML=data.energy;'  ';
+                                                            document.querySelector('#aylastatus').innerHTML=data.inService;'  ';
+                                                            
+                                                            }).catch(error=>{
+                                                            console.log(error);
+                                                            });
+                                                            </script>
+                                                            <script>
+                                                            fetch('https://api-apollo.pegaxy.io/v1/pegas/375801')
+                                                            .then(response =>{
+                                                            return response.json();
+                                                            }).then(data =>{
+                                                            console.log(data);
+                                                            document.querySelector('#ayla1').innerHTML=data.energy;'  ';
+                                                            document.querySelector('#aylastatus1').innerHTML=data.inService;'  ';
+                                                            
+                                                            }).catch(error=>{
+                                                            console.log(error);
+                                                            });
+                                                            </script>
+                                                            <script>
+                                                            fetch('https://api-apollo.pegaxy.io/v1/pegas/375119')
+                                                            .then(response =>{
+                                                            return response.json();
+                                                            }).then(data =>{
+                                                            console.log(data);
+                                                            document.querySelector('#ayla2').innerHTML=data.energy;'  ';
+                                                            document.querySelector('#aylastatus2').innerHTML=data.inService;'  ';
+                                                            
+                                                            }).catch(error=>{
+                                                            console.log(error);
+                                                            });
+                                                            </script>
+                                                            </tr>
                                                               <!-------------------------->
+                                                              <tr>
+                                                                <td>
+                                                                  <div class="d-flex px-2 py-1">
+                                                                    <div>
+                                                                      <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                                                                    </div>
+                                                                    <div class="d-flex flex-column justify-content-center">
+                                                                      <h6 class="mb-0 text-sm">RBV | Zy  </h6>
+                                                                     
+                                                                    </div>
+                                                                  </div>
+                                                                </td>
+                                                                <td>
+                                                                  <p class="text-xs font-weight-bold mb-0">Zy#3016</p>
+                                                              
+                                                                </td>
+                                                                
+                                                                <td class="align-middle text-center text-sm">
+                                                                  <p class="text-xs font-weight-bold mb-0">0x431b7F66986650d5A832F320C81073477304d26F </p>
+                                                                </td>
+                                                                <td class="align-middle text-center">
+                                                                  <span class="text-secondary text-xs font-weight-bold">3
+                                                                  </span>
+                                                                </td>
+                                                                <td class="align-middle text-center text-sm">
+                                                                  <p class="text-xs font-weight-bold mb-0">372488      
+                                                                    <p class="text-xs font-weight-bold mb-0">372279      
+                                                                      <p class="text-xs font-weight-bold mb-0">372209
+                                                                  </p>
+                                                                </td>
+                                                                <td class="align-middle text-center">
+                                                                  <div id="zystatus"></div>
+                                                                  <div id="zystatus1"></div>
+                                                                  <div id="zystatus2"></div>
+                                                                </td>
+                                                                <td class="align-middle text-center">
+                                                                  <div id="zy"></div>
+                                                                  <div id="zy1"></div>
+                                                                  <div id="zy2"></div>
+                                                                </td>
+                                                                <script>
+                                                                fetch('https://api-apollo.pegaxy.io/v1/pegas/372488')
+                                                              .then(response =>{
+                                                              return response.json();
+                                                              }).then(data =>{
+                                                              console.log(data);
+                                                              document.querySelector('#zy').innerHTML=data.energy;'  ';
+                                                              document.querySelector('#zystatus').innerHTML=data.inService;'  ';
+                                                              
+                                                              }).catch(error=>{
+                                                              console.log(error);
+                                                              });
+                                                              </script>
+                                                              <script>
+                                                              fetch('https://api-apollo.pegaxy.io/v1/pegas/372279')
+                                                              .then(response =>{
+                                                              return response.json();
+                                                              }).then(data =>{
+                                                              console.log(data);
+                                                              document.querySelector('#zy1').innerHTML=data.energy;'  ';
+                                                              document.querySelector('#zystatus1').innerHTML=data.inService;'  ';
+                                                              
+                                                              }).catch(error=>{
+                                                              console.log(error);
+                                                              });
+                                                              </script>
+                                                              <script>
+                                                              fetch('https://api-apollo.pegaxy.io/v1/pegas/372209')
+                                                              .then(response =>{
+                                                              return response.json();
+                                                              }).then(data =>{
+                                                              console.log(data);
+                                                              document.querySelector('#zy2').innerHTML=data.energy;'  ';
+                                                              document.querySelector('#zystatus2').innerHTML=data.inService;'  ';
+                                                              
+                                                              }).catch(error=>{
+                                                              console.log(error);
+                                                              });
+                                                              </script>
+                                                              </tr>
                                                                <!-------------------------->
                                                                 <!-------------------------->
                   </tbody>
