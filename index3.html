@@ -114,6 +114,7 @@
             <li class="breadcrumb-item text-sm text-dark active"><a  href="../index.html">1</a></li>
             <li class="breadcrumb-item text-sm text-dark active"><a  href="../index2.html">2</a></li>
             <li class="breadcrumb-item text-sm text-dark active"><a  href="../index3.html">3</a></li>
+            <li class="breadcrumb-item text-sm text-dark active"><a  href="../index4.html">4</a></li>
           </ol>
           <h6 class="font-weight-bolder mb-0">Secret</h6>
         </nav>
@@ -710,6 +711,247 @@
                     console.log(data);
                     document.querySelector('#toast2').innerHTML=data.energy;'  ';
                     document.querySelector('#toaststatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | REAPER </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">lynx12#9990</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0xB24950c238EF88F1958B18FC7B051068748891F5 </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">387202     
+                          <p class="text-xs font-weight-bold mb-0">387131     
+                            <p class="text-xs font-weight-bold mb-0">387085 
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="reaperstatus"></div>
+                        <div id="reaperstatus1"></div>
+                        <div id="reaperstatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="reaper"></div>
+                        <div id="reaper1"></div>
+                        <div id="reaper2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/387202')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#reaper').innerHTML=data.energy;'  ';
+                    document.querySelector('#reaperstatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/387131')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#reaper1').innerHTML=data.energy;'  ';
+                    document.querySelector('#reaperstatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/387085')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#reaper2').innerHTML=data.energy;'  ';
+                    document.querySelector('#reaperstatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | Cath'z </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Cath'z#8489</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0x7eAdae96BA5e52BA7CDc5A73dD8A951d7C702D9E </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">387426     
+                          <p class="text-xs font-weight-bold mb-0">387451     
+                            <p class="text-xs font-weight-bold mb-0">387464 
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="cathzstatus"></div>
+                        <div id="cathzstatus1"></div>
+                        <div id="cathzstatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="cathz"></div>
+                        <div id="cathz1"></div>
+                        <div id="cathz2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/387426')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#cathz').innerHTML=data.energy;'  ';
+                    document.querySelector('#cathzstatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/387451')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#cathz1').innerHTML=data.energy;'  ';
+                    document.querySelector('#cathzstatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/387464')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#cathz2').innerHTML=data.energy;'  ';
+                    document.querySelector('#cathzstatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | LIFE </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Gabb.#0479</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0x2f5049Ad3A9bD5606eFe6747CC4E9B3D625d8cCc </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">381986     
+                          <p class="text-xs font-weight-bold mb-0">381952     
+                            <p class="text-xs font-weight-bold mb-0">381888 
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="lifestatus"></div>
+                        <div id="lifestatus1"></div>
+                        <div id="lifestatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="life"></div>
+                        <div id="life1"></div>
+                        <div id="life2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/381986')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#life').innerHTML=data.energy;'  ';
+                    document.querySelector('#lifestatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/381952')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#life1').innerHTML=data.energy;'  ';
+                    document.querySelector('#lifestatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/381888')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#life2').innerHTML=data.energy;'  ';
+                    document.querySelector('#lifestatus2').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);

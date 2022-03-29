@@ -120,6 +120,7 @@
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../deks.html">1</a></li>
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../deks2.html">2</a></li>
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../deks3.html">3</a></li>
+          <li class="breadcrumb-item text-sm text-dark active"><a  href="../deks4.html">4</a></li>
         </ol>
         <h6 class="font-weight-bolder mb-0">Deks</h6>
       </nav>
@@ -803,6 +804,167 @@
                     });
                     </script>
                     </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | Akihira </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Akihira#1156</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0x25Ce7D6c888D65A5339664256caa3323b53e7800 </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">386317     
+                          <p class="text-xs font-weight-bold mb-0">386282     
+                            <p class="text-xs font-weight-bold mb-0">386168 
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="akistatus"></div>
+                        <div id="akistatus1"></div>
+                        <div id="akistatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="aki"></div>
+                        <div id="aki1"></div>
+                        <div id="aki2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/386317')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#aki').innerHTML=data.energy;'  ';
+                    document.querySelector('#akistatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/386282')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#aki1').innerHTML=data.energy;'  ';
+                    document.querySelector('#akistatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/386168')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#aki2').innerHTML=data.energy;'  ';
+                    document.querySelector('#akistatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | TG </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">The Great #7696</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0xc2C6c79D9c3AB695A6EdAd0FD6928F52453b384a </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">386157     
+                          <p class="text-xs font-weight-bold mb-0">386136     
+                            <p class="text-xs font-weight-bold mb-0">386115 
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="tgstatus"></div>
+                        <div id="tgstatus1"></div>
+                        <div id="tgstatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="tg"></div>
+                        <div id="tg1"></div>
+                        <div id="tg2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/386157')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#tg').innerHTML=data.energy;'  ';
+                    document.querySelector('#tgstatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/386136')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#tg1').innerHTML=data.energy;'  ';
+                    document.querySelector('#tgstatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/386115')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#tg2').innerHTML=data.energy;'  ';
+                    document.querySelector('#tgstatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    
     <!------------------------------------------------------------>
     <tr class="info" >
       <td>

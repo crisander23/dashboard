@@ -121,6 +121,7 @@
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab.html">1</a></li>
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab2.html">2</a></li>
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab3.html">3</a></li>
+          <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab4.html">4</a></li>
         </ol>
         <h6 class="font-weight-bolder mb-0">Mcnuggets</h6>
       </nav>
@@ -883,6 +884,7 @@
                     });
                     </script>
                     </tr>
+                   
                     <tr class="info" >
                       <td>
                         <div class="d-flex px-2 py-1">
@@ -890,80 +892,79 @@
                             <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">RBV | Shurashii  </h6>
+                            <h6 class="mb-0 text-sm">RBV | Shudin </h6>
                            
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">shurashii#1905</p>
+                        <p class="text-xs font-weight-bold mb-0">Shudin#6837</p>
                     
                       </td>
                       
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0x92B54981A82046fFfc137fAd647546D7E619B730 </p>
+                        <p class="text-xs font-weight-bold mb-0">0x9f2A0EeF1097D67EA1B03A422D0451120fC98586 </p>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">3
                         </span>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">369308      
-                          <p class="text-xs font-weight-bold mb-0">367503      
-                            <p class="text-xs font-weight-bold mb-0">369473
+                        <p class="text-xs font-weight-bold mb-0">385975     
+                          <p class="text-xs font-weight-bold mb-0">384129     
+                            <p class="text-xs font-weight-bold mb-0">383065 
                         </p>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="shurastatus"></div>
-                        <div id="shurastatus1"></div>
-                        <div id="shurastatus2"></div>
+                        <div id="shudstatus"></div>
+                        <div id="shudstatus1"></div>
+                        <div id="shudstatus2"></div>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="shura"></div>
-                        <div id="shura1"></div>
-                        <div id="shura2"></div>
+                        <div id="shud"></div>
+                        <div id="shud1"></div>
+                        <div id="shud2"></div>
                       </td>
                       <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/369308')
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/385975')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#shura').innerHTML=data.energy;'  ';
-                    document.querySelector('#shurastatus').innerHTML=data.inService;'  ';
+                    document.querySelector('#shud').innerHTML=data.energy;'  ';
+                    document.querySelector('#shudstatus').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/367503')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/384129')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#shura1').innerHTML=data.energy;'  ';
-                    document.querySelector('#shurastatus1').innerHTML=data.inService;'  ';
+                    document.querySelector('#shud1').innerHTML=data.energy;'  ';
+                    document.querySelector('#shudstatus1').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/369473')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/383065')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#shura2').innerHTML=data.energy;'  ';
-                    document.querySelector('#shurastatus2').innerHTML=data.inService;'  ';
+                    document.querySelector('#shud2').innerHTML=data.energy;'  ';
+                    document.querySelector('#shudstatus2').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     </tr>
-
     <!------------------------------------------------------------>
     <tr class="info" >
       <td>
