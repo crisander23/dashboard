@@ -122,6 +122,8 @@
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab2.html">2</a></li>
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab3.html">3</a></li>
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab4.html">4</a></li>
+          <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab5.html">5</a></li>
+          <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab6.html">6</a></li>
         </ol>
         <h6 class="font-weight-bolder mb-0">Mcnuggets</h6>
       </nav>
@@ -831,7 +833,7 @@
                       <td class="align-middle text-center text-sm">
                         <p class="text-xs font-weight-bold mb-0">369532      
                           <p class="text-xs font-weight-bold mb-0">368109      
-                            <p class="text-xs font-weight-bold mb-0">
+                            <p class="text-xs font-weight-bold mb-0">353645
                         </p>
                       </td>
                       <td class="align-middle text-center">
@@ -871,7 +873,7 @@
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/353645')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
@@ -884,7 +886,6 @@
                     });
                     </script>
                     </tr>
-                   
                     <tr class="info" >
                       <td>
                         <div class="d-flex px-2 py-1">
@@ -892,73 +893,73 @@
                             <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">RBV | Shudin </h6>
+                            <h6 class="mb-0 text-sm">RBV | Jc Laguna  </h6>
                            
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">Shudin#6837</p>
+                        <p class="text-xs font-weight-bold mb-0">Jc Laguna#7891</p>
                     
                       </td>
                       
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0x9f2A0EeF1097D67EA1B03A422D0451120fC98586 </p>
+                        <p class="text-xs font-weight-bold mb-0">0xCe5Eed0a767c765ee394Ba5a1D88191EeC035116 </p>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">3
                         </span>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">385975     
-                          <p class="text-xs font-weight-bold mb-0">384129     
-                            <p class="text-xs font-weight-bold mb-0">383065 
+                        <p class="text-xs font-weight-bold mb-0">370310      
+                          <p class="text-xs font-weight-bold mb-0">370272      
+                            <p class="text-xs font-weight-bold mb-0">370270
                         </p>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="shudstatus"></div>
-                        <div id="shudstatus1"></div>
-                        <div id="shudstatus2"></div>
+                        <div id="jlastatus"></div>
+                        <div id="jlastatus1"></div>
+                        <div id="jlastatus2"></div>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="shud"></div>
-                        <div id="shud1"></div>
-                        <div id="shud2"></div>
+                        <div id="jla"></div>
+                        <div id="jla1"></div>
+                        <div id="jla2"></div>
                       </td>
                       <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/385975')
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/370310')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#shud').innerHTML=data.energy;'  ';
-                    document.querySelector('#shudstatus').innerHTML=data.inService;'  ';
+                    document.querySelector('#jla').innerHTML=data.energy;'  ';
+                    document.querySelector('#jlastatus').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/384129')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/370272')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#shud1').innerHTML=data.energy;'  ';
-                    document.querySelector('#shudstatus1').innerHTML=data.inService;'  ';
+                    document.querySelector('#jla1').innerHTML=data.energy;'  ';
+                    document.querySelector('#jlastatus1').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/383065')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/370270')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#shud2').innerHTML=data.energy;'  ';
-                    document.querySelector('#shudstatus2').innerHTML=data.inService;'  ';
+                    document.querySelector('#jla2').innerHTML=data.energy;'  ';
+                    document.querySelector('#jlastatus2').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);

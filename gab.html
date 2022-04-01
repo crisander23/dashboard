@@ -122,6 +122,8 @@
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab2.html">2</a></li>
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab3.html">3</a></li>
           <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab4.html">4</a></li>
+          <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab5.html">5</a></li>
+          <li class="breadcrumb-item text-sm text-dark active"><a  href="../gab6.html">6</a></li>
         </ol>
         <h6 class="font-weight-bolder mb-0">Mcnuggets</h6>
       </nav>
@@ -665,12 +667,13 @@
                         <p class="text-xs font-weight-bold mb-0">0x67A313424cBb08f2082d51c1ad0cBb8F278C4c3B </p>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">1
+                        <span class="text-secondary text-xs font-weight-bold">3
                         </span>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        
-                            <p class="text-xs font-weight-bold mb-0">339004 
+                        <p class="text-xs font-weight-bold mb-0">    
+                          <p class="text-xs font-weight-bold mb-0">339096    
+                            <p class="text-xs font-weight-bold mb-0">
                         </p>
                       </td>
                       <td class="align-middle text-center">
@@ -697,7 +700,7 @@
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/339096')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
@@ -710,7 +713,7 @@
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/339004')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
@@ -744,7 +747,7 @@
                         <p class="text-xs font-weight-bold mb-0">0x184Ee249692fC10f763d6eAebCbf500e5ddfC597 </p>
                       </td>
                       <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">
+                        <span class="text-secondary text-xs font-weight-bold">3
                         </span>
                       </td>
                       <td class="align-middle text-center text-sm">
@@ -890,73 +893,73 @@
                             <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
                           </div>
                           <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">RBV | ITO  </h6>
+                            <h6 class="mb-0 text-sm">RBV | kuz </h6>
                            
                           </div>
                         </div>
                       </td>
                       <td>
-                        <p class="text-xs font-weight-bold mb-0">ITO#4439</p>
+                        <p class="text-xs font-weight-bold mb-0">kuz#9425</p>
                     
                       </td>
                       
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">0xCC55c69906C772fA8a9EBce27248F69d70d51BCc </p>
+                        <p class="text-xs font-weight-bold mb-0">0xDf024d1B02b0bac750ca136db13a78a8f452A2c5 </p>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold">3
                         </span>
                       </td>
                       <td class="align-middle text-center text-sm">
-                        <p class="text-xs font-weight-bold mb-0">348232    
-                          <p class="text-xs font-weight-bold mb-0">348269     
-                            <p class="text-xs font-weight-bold mb-0">348315
+                        <p class="text-xs font-weight-bold mb-0">407275     
+                          <p class="text-xs font-weight-bold mb-0">404199     
+                            <p class="text-xs font-weight-bold mb-0">342689 
                         </p>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="itostatus"></div>
-                        <div id="itostatus1"></div>
-                        <div id="itostatus2"></div>
+                        <div id="kuzstatus"></div>
+                        <div id="kuzstatus1"></div>
+                        <div id="kuzstatus2"></div>
                       </td>
                       <td class="align-middle text-center">
-                        <div id="ito"></div>
-                        <div id="ito1"></div>
-                        <div id="ito2"></div>
+                        <div id="kuz"></div>
+                        <div id="kuz1"></div>
+                        <div id="kuz2"></div>
                       </td>
                       <script>
-                      fetch('https://api-apollo.pegaxy.io/v1/pegas/348232')
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/407275')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#ito').innerHTML=data.energy;'  ';
-                    document.querySelector('#itostatus').innerHTML=data.inService;'  ';
+                    document.querySelector('#kuz').innerHTML=data.energy;'  ';
+                    document.querySelector('#kuzstatus').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/348269')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/404199')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#ito1').innerHTML=data.energy;'  ';
-                    document.querySelector('#itostatus1').innerHTML=data.inService;'  ';
+                    document.querySelector('#kuz1').innerHTML=data.energy;'  ';
+                    document.querySelector('#kuzstatus1').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
                     });
                     </script>
                     <script>
-                    fetch('https://api-apollo.pegaxy.io/v1/pegas/348315')
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/342689')
                     .then(response =>{
                     return response.json();
                     }).then(data =>{
                     console.log(data);
-                    document.querySelector('#ito2').innerHTML=data.energy;'  ';
-                    document.querySelector('#itostatus2').innerHTML=data.inService;'  ';
+                    document.querySelector('#kuz2').innerHTML=data.energy;'  ';
+                    document.querySelector('#kuzstatus2').innerHTML=data.inService;'  ';
                     
                     }).catch(error=>{
                     console.log(error);
