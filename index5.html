@@ -720,6 +720,167 @@
                     });
                     </script>
                     </tr>
+
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | Vechelle </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Vechelle#3141</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0xE5bdF05CC1aD98f4aaC73C12Eec4760Bb601ce6e </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">418228     
+                          <p class="text-xs font-weight-bold mb-0">418181     
+                            <p class="text-xs font-weight-bold mb-0">418167 
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="vechellestatus"></div>
+                        <div id="vechellestatus1"></div>
+                        <div id="vechellestatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="vechelle"></div>
+                        <div id="vechelle1"></div>
+                        <div id="vechelle2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/418228')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#vechelle').innerHTML=data.energy;'  ';
+                    document.querySelector('#vechellestatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/418181')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#vechelle1').innerHTML=data.energy;'  ';
+                    document.querySelector('#vechellestatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/418167')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#vechelle2').innerHTML=data.energy;'  ';
+                    document.querySelector('#vechellestatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | Kring² </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Kring²#7306</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0x0E71e29A0fe6e8E008339a716110D5089D3427F2 </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">418032     
+                          <p class="text-xs font-weight-bold mb-0">418023     
+                            <p class="text-xs font-weight-bold mb-0">417979 
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="kringstatus"></div>
+                        <div id="kringstatus1"></div>
+                        <div id="kringstatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="kring"></div>
+                        <div id="kring1"></div>
+                        <div id="kring2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/418032')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#kring').innerHTML=data.energy;'  ';
+                    document.querySelector('#kringstatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/418023')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#kring1').innerHTML=data.energy;'  ';
+                    document.querySelector('#kringstatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/417979')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#kring2').innerHTML=data.energy;'  ';
+                    document.querySelector('#kringstatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
    <!-------------------------->
                   <!-------------------------->
                 
