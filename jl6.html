@@ -246,6 +246,166 @@
                     });
                     </script>
                     </tr>
+                    <tr class="info" >
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div>
+                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                          </div>
+                          <div class="d-flex flex-column justify-content-center">
+                            <h6 class="mb-0 text-sm">RBV | Hakumen </h6>
+                           
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-xs font-weight-bold mb-0">Hakumen#0829</p>
+                    
+                      </td>
+                      
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">0x081302823CBf5000A005c1fd212B285b974b9198 </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold">3
+                        </span>
+                      </td>
+                      <td class="align-middle text-center text-sm">
+                        <p class="text-xs font-weight-bold mb-0">435205     
+                          <p class="text-xs font-weight-bold mb-0">435188     
+                            <p class="text-xs font-weight-bold mb-0">437241  
+                        </p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="hakumenstatus"></div>
+                        <div id="hakumenstatus1"></div>
+                        <div id="hakumenstatus2"></div>
+                      </td>
+                      <td class="align-middle text-center">
+                        <div id="hakumen"></div>
+                        <div id="hakumen1"></div>
+                        <div id="hakumen2"></div>
+                      </td>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/435205')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#hakumen').innerHTML=data.energy;'  ';
+                    document.querySelector('#hakumenstatus').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/435188')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#hakumen1').innerHTML=data.energy;'  ';
+                    document.querySelector('#hakumenstatus1').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    <script>
+                    fetch('https://api-apollo.pegaxy.io/v1/pegas/437241')
+                    .then(response =>{
+                    return response.json();
+                    }).then(data =>{
+                    console.log(data);
+                    document.querySelector('#hakumen2').innerHTML=data.energy;'  ';
+                    document.querySelector('#hakumenstatus2').innerHTML=data.inService;'  ';
+                    
+                    }).catch(error=>{
+                    console.log(error);
+                    });
+                    </script>
+                    </tr>
+                    <tr class="info" >
+                        <td>
+                          <div class="d-flex px-2 py-1">
+                            <div>
+                              <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
+                            </div>
+                            <div class="d-flex flex-column justify-content-center">
+                              <h6 class="mb-0 text-sm">RBV | liz </h6>
+                             
+                            </div>
+                          </div>
+                        </td>
+                        <td>
+                          <p class="text-xs font-weight-bold mb-0">Liz_71#2914</p>
+                      
+                        </td>
+                        
+                        <td class="align-middle text-center text-sm">
+                          <p class="text-xs font-weight-bold mb-0">0xd55089Dbf3DCC2E8d4787A308ff8C0eDd8192d26 </p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <span class="text-secondary text-xs font-weight-bold">3
+                          </span>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                          <p class="text-xs font-weight-bold mb-0">    
+                            <p class="text-xs font-weight-bold mb-0">    
+                              <p class="text-xs font-weight-bold mb-0"> 
+                          </p>
+                        </td>
+                        <td class="align-middle text-center">
+                          <div id="lizstatus"></div>
+                          <div id="lizstatus1"></div>
+                          <div id="lizstatus2"></div>
+                        </td>
+                        <td class="align-middle text-center">
+                          <div id="liz"></div>
+                          <div id="liz1"></div>
+                          <div id="liz2"></div>
+                        </td>
+                        <script>
+                        fetch('https://api-apollo.pegaxy.io/v1/pegas/')
+                      .then(response =>{
+                      return response.json();
+                      }).then(data =>{
+                      console.log(data);
+                      document.querySelector('#liz').innerHTML=data.energy;'  ';
+                      document.querySelector('#lizstatus').innerHTML=data.inService;'  ';
+                      
+                      }).catch(error=>{
+                      console.log(error);
+                      });
+                      </script>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/')
+                      .then(response =>{
+                      return response.json();
+                      }).then(data =>{
+                      console.log(data);
+                      document.querySelector('#liz1').innerHTML=data.energy;'  ';
+                      document.querySelector('#lizstatus1').innerHTML=data.inService;'  ';
+                      
+                      }).catch(error=>{
+                      console.log(error);
+                      });
+                      </script>
+                      <script>
+                      fetch('https://api-apollo.pegaxy.io/v1/pegas/')
+                      .then(response =>{
+                      return response.json();
+                      }).then(data =>{
+                      console.log(data);
+                      document.querySelector('#liz2').innerHTML=data.energy;'  ';
+                      document.querySelector('#lizstatus2').innerHTML=data.inService;'  ';
+                      
+                      }).catch(error=>{
+                      console.log(error);
+                      });
+                      </script>
+                      </tr>
     <!------------------------------------------------------------>
     <tr class="info" >
       <td>
